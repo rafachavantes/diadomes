@@ -1,0 +1,981 @@
+
+<html><head><script>window.sessionId = 'rck.' + Math.random().toString(36).substr(2, 9) + '.' + Date.now();</script><style type="text/css">
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+body{
+    margin:0;
+    padding:0
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.col-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-sm {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .col-sm-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  .col-sm-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-sm-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-sm-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-sm-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-sm-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-sm-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .order-sm-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .order-sm-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+  .order-sm-0 {
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .order-sm-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .order-sm-2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .order-sm-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .order-sm-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .order-sm-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  .order-sm-6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  .order-sm-7 {
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  .order-sm-8 {
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  .order-sm-9 {
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  .order-sm-10 {
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  .order-sm-11 {
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  .order-sm-12 {
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  .offset-sm-0 {
+    margin-left: 0;
+  }
+  .offset-sm-1 {
+    margin-left: 8.333333%;
+  }
+  .offset-sm-2 {
+    margin-left: 16.666667%;
+  }
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  .offset-sm-4 {
+    margin-left: 33.333333%;
+  }
+  .offset-sm-5 {
+    margin-left: 41.666667%;
+  }
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  .offset-sm-7 {
+    margin-left: 58.333333%;
+  }
+  .offset-sm-8 {
+    margin-left: 66.666667%;
+  }
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  .offset-sm-10 {
+    margin-left: 83.333333%;
+  }
+  .offset-sm-11 {
+    margin-left: 91.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .col-md-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  .col-md-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-md-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-md-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-md-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}
+
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+background-color: transparent;border: 1px solid transparent;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+ outline:0;
+}
+.btn-light{
+  color:#212529;
+  background-color:#f8f9fa;
+  border-color:#f8f9fa
+}
+.btn-light:hover{
+  color:#212529;
+  background-color:#e2e6ea;
+  border-color:#dae0e5
+}
+.btn-light.focus,
+.btn-light:focus{
+  box-shadow:0 0 0 .2rem rgba(216,217,219,.5)
+}
+.btn-light.disabled,.btn-light:disabled{
+  color:#212529;
+  background-color:#f8f9fa;
+  border-color:#f8f9fa
+}
+
+.embed-responsive{
+  position:relative;
+  display:block;
+  width:100%;
+  padding:0;
+  overflow:hidden
+}
+.embed-responsive::before{
+  display:block;
+  content:""
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border:0
+}
+.embed-responsive-21by9::before{
+  padding-top:42.857143%
+}
+.embed-responsive-16by9::before{
+  padding-top:56.25%
+}
+.embed-responsive-3by4::before{
+  padding-top:133.333333%
+}
+.embed-responsive-1by1::before{
+  padding-top:100%
+}
+.img-fluid{max-width:100%;height:auto}
+.form-text{display:block;margin-top:.25rem}
+.text-muted{color:#6c757d!important}
+.was-validated .form-control:valid{
+  border-color:#28a745;
+  padding-right:2.25rem;
+  background-repeat:no-repeat;
+  background-position:center right calc(2.25rem / 4);
+  background-size:calc(2.25rem / 2) calc(2.25rem / 2);
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e")
+}
+.form-control.is-valid:focus,.was-validated .form-control:valid:focus{
+  border-color:#28a745;
+  box-shadow:0 0 0 .2rem rgba(40,167,69,.25)}
+  .form-control.is-valid~.valid-feedback,
+  .form-control.is-valid~.valid-tooltip,
+  .was-validated .form-control:valid~.valid-feedback,
+  .was-validated .form-control:valid~.valid-tooltip{
+    display:block
+  }
+  .was-validated textarea.form-control:valid,textarea.form-control.is-valid{
+    padding-right:2.25rem;
+    background-position:top calc(2.25rem / 4) right calc(2.25rem / 4)
+  }
+  .form-control.is-invalid,.was-validated .form-control:invalid{
+    border-color:#dc3545;
+    padding-right:2.25rem;
+    background-repeat:no-repeat;
+    background-position:center right calc(2.25rem / 4);
+    background-size:calc(2.25rem / 2) calc(2.25rem / 2);
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E")
+  }
+  .form-control.is-invalid:focus,.was-validated .form-control:invalid:focus{
+      border-color:#dc3545;
+      box-shadow:0 0 0 .2rem rgba(220,53,69,.25)
+  }
+  .form-control.is-invalid~.invalid-feedback,.form-control.is-invalid~.invalid-tooltip,.was-validated .form-control:invalid~.invalid-feedback,.was-validated .form-control:invalid~.invalid-tooltip{
+    display:block
+  }
+  .was-validated textarea.form-control:invalid,textarea.form-control.is-invalid{
+    padding-right:2.25rem;
+    background-position:top calc(2.25rem / 4) right calc(2.25rem / 4)
+  }
+.disabled-account-modal {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-color: rgba(0,0,0,.6);
+}
+.disabled-account-modal .disabled-account-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px;
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+    text-align: center;
+}
+.disabled-account-modal .disabled-account-modal-content .disabled-account-modal-create-funnels {
+    margin-top: 35px;
+    font-size: 20px;
+    color: #435569;
+    font-weight: 700;
+}
+.disabled-account-modal .disabled-account-modal-content .disabled-account-modal-your-page {
+    font-size: 12px;
+    color: #435569;
+}
+.disabled-account-modal .disabled-account-modal-content .disabled-account-modal-learn-more {
+    margin-top: 55px;
+}
+.form-check {
+  position:relative;
+  display:block;
+  padding-left:1.25rem
+}
+.form-check-input {
+  position:absolute;
+  margin-top:.1rem;
+  margin-left:-1.25rem
+}
+.form-check-input:disabled~.form-check-label {
+  color:#6c757d
+}
+.form-check-label {
+  margin-bottom:0
+}
+.form-check-inline {
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  padding-left:0;
+  margin-right:.75rem
+}
+.form-check-inline .form-check-input {
+  position:static;
+  margin-top:0;
+  margin-right:.3125rem;
+  margin-left:0
+}
+.form-check-input.is-valid~.valid-feedback,.form-check-input.is-valid~.valid-tooltip,.was-validated .form-check-input:valid~.valid-feedback,.was-validated .form-check-input:valid~.valid-tooltip {
+  display:block
+}
+.form-check-input.is-invalid~.form-check-label,.was-validated .form-check-input:invalid~.form-check-label {
+  color:#dc3545
+}
+.form-check-input.is-invalid~.invalid-feedback,.form-check-input.is-invalid~.invalid-tooltip,.was-validated .form-check-input:invalid~.invalid-feedback,.was-validated .form-check-input:invalid~.invalid-tooltip {
+  display:block
+}
+.form-check {
+  width:100%
+}
+</style><style data-styled="nyyIF idwcde gUwhjA FUODU btgsUV etsVSu ccpJuj bHWSud iMYOhA gIwpNj bybBlR dmygd icpSMg jShDgg eheyaw bJjUXB VWCrQ fipfjh dlUpKb Kbxny hAyorR hzXcGJ jUTAso dCdoMD kRrKMF egYmeV jyiqCS fhdHBO kJlSMK boibLN bEBRwr ecOadU iGUtUp lccMbY bxIdLX fqDXUb kbDTHz bLyVqb jDhQOv ivxTt iGVYNu deoOFv gexvjY eWqveh txUbm eHOecC fcVEWk iWCXLo gVcTwg fVIvnW dOiCvw hRBgNG kwTBIt cNcEUz gKmCdB eWTpyL jHSSPH jmnztH iLHVaK ccYwpK efVnqA drSlEz kLBMtV cSweVX icaWnA caNQUW kAhRyF jCpcyO cMgzMg kgQbPR eZEhfq bqCQC gHpnnW cWUyzf fvCKQS bmAPxc cJbJkH eHMvBM iFNXgY cZhJOy kAuPCu jeXYp frUGRP hbbeKD cACjrK dEQGdx" data-styled-version="4.1.3">
+/* sc-component-id: sc-global-2541213546 */
+body{font-family:auto;}
+/* sc-component-id: sc-global-836452597 */
+#react-app{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} html{-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;} body{margin:0px;} form{margin-bottom:0;} b,strong{font-weight:bold;} p{margin:0;} .embed-responsive .embed-responsive-item,.embed-responsive embed,.embed-responsive iframe,.embed-responsive object,.embed-responsive video{top:2px;} .fb-comments{width:100% !important;height:100% !important;} .fb-comments iframe{border:0;display:block;margin:0 auto;width:100% !important;height:100% !important;} .hidden{display:none;}
+/* sc-component-id: sc-kAzzGY */
+.bmAPxc{fill:black;} @media (max-width:820px) and (min-width:600px){.bmAPxc{fill:black;}} @media (max-width:479px){}
+/* sc-component-id: sc-chPdSV */
+.jyiqCS{font-size:28px;font-weight:700;color:#212529;font-family:Roboto;margin-top:40px;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0px;padding-right:0px;padding-bottom:8px;padding-left:0px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.jyiqCS{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.jyiqCS{font-size:24px;line-height:30px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.fhdHBO{font-size:18px;color:#212529;font-family:Roboto Condensed;font-weight:500;padding-top:5px;padding-right:150px;padding-bottom:5px;padding-left:150px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.fhdHBO{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.fhdHBO{padding-top:5px;padding-right:0px;padding-bottom:5px;padding-left:0px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.kJlSMK{font-size:20px;color:#212529;font-family:Roboto;font-weight:400;padding-top:30px;padding-right:5px;padding-bottom:5px;padding-left:5px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.kJlSMK{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.kJlSMK{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.boibLN{margin-top:0;position:relative;} @media (max-width:820px) and (min-width:600px){.boibLN{margin-top:0;position:relative;}} @media (max-width:479px){.boibLN{margin-top:0;position:relative;}}.bEBRwr{font-size:32px;color:#212529;font-family:Montserrat;font-weight:900;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.bEBRwr{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.bEBRwr{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.ecOadU{font-size:18px;color:#212529;font-family:Montserrat;font-weight:700;padding-top:5px;padding-right:5px;padding-bottom:28px;padding-left:5px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.ecOadU{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.ecOadU{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.iGUtUp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;} @media (max-width:820px) and (min-width:600px){.iGUtUp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;}} @media (max-width:479px){.iGUtUp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;}}.lccMbY{width:70%;border:0px solid rgba(218,210,210,0);border-radius:0px 0px 0px 0px;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){.lccMbY{width:100%;}}.bxIdLX{font-size:18px;color:#212529;font-family:Montserrat;font-weight:700;padding-top:24px;padding-right:5px;padding-bottom:28px;padding-left:5px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.bxIdLX{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.bxIdLX{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.fqDXUb{font-size:16px;color:#212529;font-family:Montserrat;font-weight:500;padding-top:18px;padding-right:5px;padding-bottom:80px;padding-left:5px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.fqDXUb{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.fqDXUb{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.kbDTHz{font-size:18px;color:#212529;font-family:Montserrat;font-weight:500;text-align:left;padding-top:60px;padding-right:0px;padding-bottom:16px;padding-left:0px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.kbDTHz{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.kbDTHz{text-align:left;padding-top:0px;padding-right:0px;padding-bottom:16px;padding-left:0px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.bLyVqb{font-size:16px;color:rgba(255,255,255,1);text-align:left;font-family:Montserrat;font-weight:400;line-height:22px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.bLyVqb{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.bLyVqb{text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.jDhQOv{font-size:20px;color:#212529;padding-top:24px;padding-right:5px;padding-bottom:5px;padding-left:5px;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.jDhQOv{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.jDhQOv{text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.ivxTt{font-size:26px;font-weight:700;color:#212529;margin-top:89px;margin-right:0;margin-bottom:0;margin-left:0;line-height:36px;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.ivxTt{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.ivxTt{font-family:Montserrat;font-size:26px;line-height:32px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}@media (max-width:820px) and (min-width:600px){} @media (max-width:479px){.iGVYNu{display:none;}}.deoOFv{font-size:18px;font-weight:500;color:#212529;font-family:Montserrat;margin-top:0px;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.deoOFv{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.deoOFv{margin-top:0px;margin-right:0;margin-bottom:0;margin-left:0;font-size:16px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.gexvjY{font-size:32px;font-weight:700;color:#212529;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.gexvjY{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.gexvjY{font-family:Montserrat;font-size:28px;line-height:32px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.eWqveh{display:block;text-align:center;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.eWqveh{display:block;text-align:center;max-width:none;z-index:1;}} @media (max-width:479px){.eWqveh{display:block;text-align:center;max-width:none;z-index:1;}}.txUbm{font-size:16px;font-weight:700;color:#212529;font-family:Montserrat;padding-top:5px;padding-right:5px;padding-bottom:46px;padding-left:5px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.txUbm{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.txUbm{font-size:16px;line-height:22px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.eHOecC{font-size:22px;color:#212529;line-height:28px;padding-top:16px;padding-right:5px;padding-bottom:0px;padding-left:5px;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.eHOecC{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.eHOecC{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.fcVEWk{font-size:16px;color:#212529;font-family:Montserrat;line-height:20px;padding-top:16px;padding-right:5px;padding-bottom:5px;padding-left:5px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.fcVEWk{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.fcVEWk{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.iWCXLo{font-size:22px;color:#212529;font-family:Montserrat;font-weight:500;text-align:left;padding-top:30px;padding-right:0px;padding-bottom:0px;padding-left:0px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.iWCXLo{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.iWCXLo{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:16px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.gVcTwg{font-size:48px;color:#212529;font-family:Montserrat;font-weight:500;text-align:left;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.gVcTwg{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.gVcTwg{font-size:32px;margin-top:-9px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.fVIvnW{font-size:22px;color:#212529;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.fVIvnW{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.fVIvnW{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;line-height:28px;text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.dOiCvw{font-size:16px;color:#212529;font-family:Montserrat;font-weight:400;line-height:22px;text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.dOiCvw{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.dOiCvw{text-align:left;padding-top:16px;padding-right:0px;padding-bottom:0px;padding-left:0px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.hRBgNG{font-size:22px;color:#212529;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.hRBgNG{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.hRBgNG{text-align:left;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.kwTBIt{font-size:16px;color:#212529;font-family:Montserrat;font-weight:400;line-height:22px;text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.kwTBIt{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.kwTBIt{padding-top:16px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.cNcEUz{font-size:22px;color:#212529;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.cNcEUz{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.cNcEUz{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:left;line-height:26px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.gKmCdB{font-size:16px;color:#212529;font-family:Montserrat;font-weight:400;line-height:22px;text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.gKmCdB{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.gKmCdB{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:16px;margin-right:0;margin-bottom:0;margin-left:0;text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.eWTpyL{font-size:14px;color:#212529;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.eWTpyL{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.eWTpyL{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.jHSSPH{font-size:26px;font-weight:600;color:#212529;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.jHSSPH{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.jHSSPH{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.jmnztH{font-size:24px;font-weight:700;color:#212529;font-family:Montserrat;line-height:32px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.jmnztH{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.jmnztH{font-family:Montserrat;font-size:22px;line-height:26px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.iLHVaK{font-size:18px;font-weight:600;color:#212529;margin-top:9px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.iLHVaK{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.iLHVaK{font-size:16px;line-height:22px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.ccYwpK{font-size:26px;font-weight:700;color:#212529;font-family:Montserrat;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.ccYwpK{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.ccYwpK{font-size:24px;line-height:26px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.efVnqA{font-size:18px;font-weight:600;color:#212529;margin-top:9px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.efVnqA{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.efVnqA{font-size:16px;line-height:20px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.drSlEz{font-size:18px;color:rgba(126,126,126,1);text-align:left;font-family:Montserrat;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.drSlEz{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.drSlEz{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.kLBMtV{font-size:20px;color:rgba(126,126,126,1);text-align:left;line-height:26px;font-family:Montserrat;margin-top:16px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.kLBMtV{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.kLBMtV{padding-top:16px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:center;font-size:18px;line-height:24px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.cSweVX{font-size:16px;color:rgba(126,126,126,1);text-align:left;line-height:24px;font-family:Montserrat;font-weight:500;margin-top:16px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.cSweVX{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.cSweVX{font-size:14px;line-height:22px;padding-top:16px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.icaWnA{display:block;text-align:center;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.icaWnA{display:block;text-align:center;max-width:none;z-index:1;}} @media (max-width:479px){.icaWnA{display:block;text-align:center;margin-top:24px;margin-left:0;max-width:none;z-index:1;}}.caNQUW{font-size:14px;color:#212529;text-align:left;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.caNQUW{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.caNQUW{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.kAhRyF{font-size:14px;color:#212529;text-align:right;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.kAhRyF{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.kAhRyF{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}
+/* sc-component-id: sc-kgoBCf */
+.eZEhfq{background:url() center center / auto repeat scroll,linear-gradient(to right,rgba(210,139,33,1),rgba(50,105,9,1));border:0px solid rgba(218,210,210,0);font-family:Montserrat;font-weight:700;font-size:18px;color:rgba(255,255,255,1);border-radius:30px 30px 30px 30px;padding-top:15px;padding-right:50px;padding-bottom:15px;padding-left:50px;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){} .eZEhfq:hover{-webkit-animation:gqnhIe;animation:gqnhIe;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-timing-function:ease;animation-timing-function:ease;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-play-state:running;animation-play-state:running;}.bqCQC{background:url() center center / auto repeat scroll,linear-gradient(to right,rgba(210,139,33,1),rgba(50,105,9,1));border:0px solid rgba(218,210,210,0);font-family:Montserrat;font-weight:700;font-size:18px;color:rgba(255,255,255,1);border-radius:30px 30px 30px 30px;padding-top:15px;padding-right:50px;padding-bottom:15px;padding-left:50px;margin-top:30px;margin-right:0;margin-bottom:0;margin-left:0;width:63%;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){.bqCQC{width:100%;}} .bqCQC:hover{-webkit-animation:gqnhIe;animation:gqnhIe;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-timing-function:ease;animation-timing-function:ease;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-play-state:running;animation-play-state:running;}.gHpnnW{background:url() center center / auto repeat scroll,linear-gradient(to right,rgba(210,139,33,1),rgba(50,105,9,1));border:0px solid rgba(218,210,210,0);font-family:Montserrat;font-weight:700;font-size:18px;color:rgba(255,255,255,1);border-radius:30px 30px 30px 30px;padding-top:15px;padding-right:50px;padding-bottom:15px;padding-left:50px;margin-top:30px;margin-right:0;margin-bottom:0;margin-left:0;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){} .gHpnnW:hover{-webkit-animation:gqnhIe;animation:gqnhIe;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-timing-function:ease;animation-timing-function:ease;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-play-state:running;animation-play-state:running;}
+/* sc-component-id: sc-kGXeez */
+.frUGRP{max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.frUGRP{max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.frUGRP{width:369px;height:199px;max-width:100%;cursor:auto;object-fit:contain;}}.hbbeKD{width:210px;height:210px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.hbbeKD{max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.hbbeKD{width:300px;height:300px;max-width:100%;cursor:auto;object-fit:contain;}}.cACjrK{width:461px;height:346px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.cACjrK{max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.cACjrK{max-width:100%;cursor:auto;object-fit:contain;}}.dEQGdx{width:637px;height:637px;max-width:100%;cursor:auto;border-radius:150px 20px 150px 20px;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.dEQGdx{max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.dEQGdx{width:346px;height:346px;max-width:100%;cursor:auto;object-fit:contain;}}
+/* sc-component-id: sc-jKJlTe */
+.jCpcyO{z-index:0;background:rgba(0,0,0,0.2);position:absolute;top:0;left:0;width:100%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-size:cover;background-position:center;}
+/* sc-component-id: sc-eNQAEJ */
+.cMgzMg{width:70px;opacity:0.8;cursor:pointer;}
+/* sc-component-id: sc-kkGfuU */
+.kgQbPR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;error: false;} @media (max-width:820px) and (min-width:600px){.kgQbPR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;}} @media (max-width:479px){.kgQbPR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;}}
+/* sc-component-id: sc-frDJqD */
+.egYmeV{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-Index:1;}
+/* sc-component-id: sc-hqyNC */
+.cJbJkH{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;height:100%;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;overflow-x:auto;-webkit-scroll-snap-type:x mandatory;-moz-scroll-snap-type:x mandatory;-ms-scroll-snap-type:x mandatory;scroll-snap-type:x mandatory;-ms-overflow-style:none;-webkit-scrollbar-width:none;-moz-scrollbar-width:none;-ms-scrollbar-width:none;scrollbar-width:none;-webkit-transition-duration:1s;transition-duration:1s;} .cJbJkH::-webkit-scrollbar{display:none;}
+/* sc-component-id: sc-jbKcbu */
+.fvCKQS{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:26px;width:921px;max-width:100%;height:76px;padding:5px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} @media (max-width:820px) and (min-width:600px){.fvCKQS{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:0;width:100%;max-width:100%;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;}} @media (max-width:479px){.fvCKQS{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;max-width:100%;margin-top:0;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;}}
+/* sc-component-id: sc-dNLxif */
+.cWUyzf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;justify-self:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;background-color:transparent;position:static;top:0px;bottom:0px;left:0px;right:0px;z-index:999;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition-duration:0.5s;transition-duration:0.5s;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}
+/* sc-component-id: sc-bbmXgH */
+.cZhJOy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;overflow-x:auto;padding:1%;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;} @media (max-width:820px) and (min-width:600px){.cZhJOy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.cZhJOy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}
+/* sc-component-id: sc-gGBfsJ */
+.eHMvBM{padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;border:none;border-radius:0;width:100%;object-fit:cover;cursor:auto;height:100%;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-scroll-snap-align:start;-moz-scroll-snap-align:start;-ms-scroll-snap-align:start;scroll-snap-align:start;cursor:pointer;} @media (max-width:820px) and (min-width:600px){.eHMvBM{padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;border:none;border-radius:0;width:100%;object-fit:none;cursor:auto;}} @media (max-width:479px){.eHMvBM{padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;border:none;border-radius:0;width:100%;object-fit:cover;cursor:auto;}}.iFNXgY{padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;border:none;border-radius:0;width:100%;object-fit:cover;cursor:auto;height:100%;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-scroll-snap-align:start;-moz-scroll-snap-align:start;-ms-scroll-snap-align:start;scroll-snap-align:start;cursor:pointer;} @media (max-width:820px) and (min-width:600px){.iFNXgY{padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;border:none;border-radius:0;width:100%;object-fit:none;cursor:auto;}} @media (max-width:479px){.iFNXgY{padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;border:none;border-radius:0;width:100%;object-fit:contain;cursor:auto;}}
+/* sc-component-id: sc-jnlKLf */
+.kAuPCu{background-color:black;border-radius:50%;width:12px;height:12px;border:1px solid black;margin:12px 6px;cursor:pointer;} @media (max-width:820px) and (min-width:600px){.kAuPCu{background-color:black;}} @media (max-width:479px){.kAuPCu{background-color:black;}}.jeXYp{background-color:transparent;border-radius:50%;width:12px;height:12px;border:1px solid black;margin:12px 6px;cursor:pointer;} @media (max-width:820px) and (min-width:600px){.jeXYp{background-color:transparent;}} @media (max-width:479px){.jeXYp{background-color:transparent;}}
+/* sc-component-id: sc-lhVmIH */
+.fipfjh{padding:5px;margin:0;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.dlUpKb{padding:5px;margin:0;background:url() center center / auto repeat scroll rgba(241,241,241,1);padding-top:0px;padding-right:50px;padding-bottom:60px;padding-left:50px;margin-top:0px;margin-right:0;margin-bottom:0;margin-left:0;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.Kbxny{padding:5px;margin:0;padding-top:0px;padding-right:50px;padding-bottom:50px;padding-left:50px;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.hAyorR{padding:5px;margin:0;padding-top:40px;padding-right:0px;padding-bottom:0px;padding-left:0px;background:url() center center / auto repeat scroll rgba(241,241,241,1);} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.hzXcGJ{padding:5px;margin:0;padding-top:30px;padding-right:30px;padding-bottom:0px;padding-left:30px;border:0px solid rgba(255,255,255,0);border-radius:0px 0px 0px 0px;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.jUTAso{padding:5px;margin:0;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.dCdoMD{padding:5px;margin:0;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.kRrKMF{padding:5px;margin:0;padding-top:5px;padding-right:40px;padding-bottom:5px;padding-left:5px;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){.kRrKMF{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}}
+/* sc-component-id: sc-bYSBpT */
+.iMYOhA{padding:5px;margin:0;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.iMYOhA{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.iMYOhA{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.gIwpNj{padding:5px;margin:0;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;background:url() center center / auto repeat scroll rgba(39,32,32,1);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.gIwpNj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.gIwpNj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.bybBlR{padding:5px;margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.bybBlR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.bybBlR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.dmygd{padding:5px;margin:0;background:url() center center / auto repeat scroll,linear-gradient(to bottom,rgba(0,166,79,1),rgba(220,130,32,1));box-shadow:1px 1px 10px 0px rgba(94,0,0,0.42);border:0px solid rgba(218,210,210,0);border-radius:30px 30px 30px 30px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;margin-top:20px;margin-right:0;margin-bottom:0;margin-left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.dmygd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.dmygd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.icpSMg{padding:5px;margin:0;background:url() center center / auto repeat scroll,linear-gradient(to bottom,rgba(0,166,79,1),rgba(220,130,32,1));box-shadow:1px 1px 10px 0px rgba(94,0,0,0.42);border:0px solid rgba(218,210,210,0);border-radius:30px 30px 30px 30px;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;margin-top:20px;margin-right:0;margin-bottom:0;margin-left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.icpSMg{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.icpSMg{margin-top:20px;margin-right:0;margin-bottom:0;margin-left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.jShDgg{padding:5px;margin:0;background:url() center center / auto repeat scroll rgba(0,0,0,1);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.jShDgg{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.jShDgg{padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.eheyaw{padding:5px;margin:0;background:url() center center / auto repeat scroll rgba(241,241,241,1);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.eheyaw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.eheyaw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.bJjUXB{padding:5px;margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.bJjUXB{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.bJjUXB{padding-top:40px;padding-right:20px;padding-bottom:40px;padding-left:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.VWCrQ{padding:5px;margin:0;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.VWCrQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.VWCrQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}
+/* sc-component-id: sc-elJkPf */
+.idwcde{padding:5px;background:url(https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/PVqgClvW4UyGoNWH118BCA.jpeg) center center / cover repeat scroll rgba(238,126,126,0.9);padding-top:40px;padding-right:0px;padding-bottom:40px;padding-left:0px;margin-top:0px;margin-right:0;margin-bottom:0;margin-left:0;position-none:none;display:initial;} @media (max-width:820px) and (min-width:600px){.idwcde{display:initial;}} @media (max-width:479px){.idwcde{margin-top:0px;margin-right:0;margin-bottom:0;margin-left:0;padding-top:40px;padding-right:20px;padding-bottom:40px;padding-left:20px;display:initial;}}.gUwhjA{padding:5px;display:initial;} @media (max-width:820px) and (min-width:600px){.gUwhjA{display:initial;}} @media (max-width:479px){.gUwhjA{display:initial;}}.FUODU{padding:5px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;display:initial;} @media (max-width:820px) and (min-width:600px){.FUODU{display:initial;}} @media (max-width:479px){.FUODU{padding-top:40px;padding-right:20px;padding-bottom:40px;padding-left:20px;display:initial;}}.btgsUV{padding:5px;display:initial;} @media (max-width:820px) and (min-width:600px){.btgsUV{display:initial;}} @media (max-width:479px){.btgsUV{padding-top:40px;padding-right:20px;padding-bottom:40px;padding-left:20px;display:initial;}}.etsVSu{padding:5px;display:initial;} @media (max-width:820px) and (min-width:600px){.etsVSu{display:initial;}} @media (max-width:479px){.etsVSu{padding-top:0px;padding-right:20px;padding-bottom:0px;padding-left:20px;display:initial;}}.ccpJuj{padding:5px;margin-top:82px;margin-right:0;margin-bottom:0;margin-left:0;display:initial;} @media (max-width:820px) and (min-width:600px){.ccpJuj{display:initial;}} @media (max-width:479px){.ccpJuj{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;display:initial;}}.bHWSud{padding:5px;background:url() center center / auto repeat scroll rgba(29,29,29,1);display:initial;} @media (max-width:820px) and (min-width:600px){.bHWSud{display:initial;}} @media (max-width:479px){.bHWSud{display:initial;}}
+/* sc-component-id: sc-kPVwWT */
+.nyyIF{position:absolute;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;right:24px;bottom:24px;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-flex-flow:column-reverse;-ms-flex-flow:column-reverse;flex-flow:column-reverse;z-index:1000;}</style><style data-styled="gqnhIe" data-styled-version="4.1.3">
+/* sc-component-id: sc-keyframes-gqnhIe */
+@-webkit-keyframes gqnhIe{from{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}50%{-webkit-transform:scale3d(1.05,1.05,1.05);-ms-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05);}to{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}} @keyframes gqnhIe{from{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}50%{-webkit-transform:scale3d(1.05,1.05,1.05);-ms-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05);}to{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}}</style><meta data-rh charSet="UTF-8" /><meta data-rh httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta data-rh name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta data-rh name="description" /><meta data-rh name="keywords" /><meta data-rh property="og:locale" content="en_US" /><meta data-rh property="og:type" content="article" /><meta data-rh property="og:title" content /><meta data-rh property="og:description" content /><meta data-rh property="og:site_name" content /><meta data-rh property="og:url" content /><title data-rh></title><script data-rh>
+								function checkStateAndCall(callback) {
+									var _success = false;
+									return function () {
+											if (!_success && (!this.readyState || this.readyState === 'complete')) {
+												_success = true;
+												callback();
+											}
+									}
+								}
+
+								function getMain(results) {
+									function loadNext() {
+										if (!results.length) {
+											return;
+										}
+
+										var path = results.shift();
+										var scriptElm = document.createElement('script');
+										scriptElm.type = 'text/javascript';
+										scriptElm.async = true;
+										scriptElm.src = path;
+										scriptElm.onload = scriptElm.onreadystatechange = checkStateAndCall(loadNext);
+
+										// this one will be ready
+										var headElm = document.head || document.getElementsByTagName('head')[0];
+										headElm.appendChild(scriptElm);
+									}
+									loadNext(); // start a chain
+								}
+
+								function getFont(font) {
+									function loadNext() {
+										var linkElm = document.createElement('link');
+										linkElm.type = 'text/css';
+										linkElm.rel = "stylesheet";
+										linkElm.href = font;
+
+										// this one will be ready
+										var headElm = document.head || document.getElementsByTagName('head')[0];
+										headElm.insertBefore(linkElm, headElm.firstChild);
+									}
+									loadNext();
+								}
+							</script><script data-rh id="result" type="javascript/worker">
+								self.onmessage = function (e) {
+									const loadLinkFont = async (initial) => {
+									const fonts = ['latin', 'latin-ext']
+									const variants = ['300', 'regular', 'regular', '700', '900']
+									return await getUrl(initial, fonts, variants)
+								}
+
+								const getUrl = (font, results, variants) => {
+									const variantsEnc = variants.join(",")
+									const familiesEnc = encodeURIComponent(font) +':'+ variantsEnc
+									let query = '?family='+ familiesEnc
+
+									// Query the fonts in the specified
+									query += '&subset='+ results.join(",") +'&display=swap'
+
+									// Fetch and return stylesheet
+									const FONT_BASE_URL = "https://fonts.googleapis.com/css"
+									return FONT_BASE_URL + query
+									}
+
+									var links = []
+									var fonts = ['Roboto','Roboto Condensed','Montserrat'];
+									fonts.map((font) => {
+										if (!links.includes(font)) {
+												loadLinkFont(font)
+												.then((result) => {
+													self.postMessage({ type: 'getFont', link: result });
+												})
+												links.push(font)
+											}
+										})
+
+										setTimeout(function () {
+											const secondMessage = { type: 'getMain' }
+											self.postMessage(secondMessage);
+										}, 2500);
+								};
+							</script><style type="text/css">
+		.display-date {
+			display: block;
+			position: relative;
+			height: auto;
+			width: auto;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid black;
+			background-color: #f2f2f2;
+			text-align: center;
+			font-size: 16px;
+			font-weight: bold;
+		}
+	</style></head><body><div id="react-app"><div class="sc-kPVwWT nyyIF"></div><div id="4cab40d8-aabd-42c7-bc9a-862e4a4cc9a6" class="sc-bZQynM sc-chPdSV container  sc-elJkPf idwcde"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT iMYOhA"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH fipfjh"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV jyiqCS"><font color="#ffffff">TRANSFORME A RELAÇÃO COM OS CAVALOS ATRAVÉS DOS </font><font color="#d58c21"><u>3 PILARES</u></font><font color="#ffffff"> DA UC
+</font></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV fhdHBO"><font color="#ffffff">Conquiste a confiança do seu cavalo, melhore sua equitação e aprenda a treinar seu cavalo mesmo que você esteja iniciando no mundo dos cavalos.
+</font></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV kJlSMK"><font color="#ffffff">3 CURSOS ONLINE
+</font></div></div><div class="sc-bZQynM displayDate sc-chPdSV boibLN"></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV bEBRwr"><div><font color="#ffffff">COM</font><font color="#0693e3"> 80%</font><font color="#ffffff"> DE DESCONTO</font></div></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV ecOadU"><u style="font-weight: normal;"><font color="#ffffff">10x sem juros de R$ 29,70&nbsp;&nbsp;</font></u><br></div></div><div class="sc-bZQynM sc-chPdSV iGUtUp"><div class="sc-bZQynM embed-responsive embed-responsive-16by9 sc-chPdSV lccMbY"><div class="sc-jKJlTe jCpcyO"><svg fill="#fff" viewBox="0 0 50 50" class="sc-eNQAEJ cMgzMg"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4 29V15l12 9-12 9z"></path></svg></div><div></div></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV bxIdLX"><font color="#ffffff" style="font-weight: normal;">Então clique no botão abaixo e GARANTA </font><font color="#0693e3">seu desconto agora.&nbsp;&nbsp;</font><br></div></div><div class="sc-bZQynM sc-chPdSV sc-kkGfuU kgQbPR"><button type="button" disabled class="sc-dnqmqq btn esconde sc-kgoBCf eZEhfq">QUERO APROVEITAR O DESCONTO</button></div><div class="esconde sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV fqDXUb"><font color="#ffffff" style="font-weight: normal;">3 cursos por apenas 10x R$ 29,70
+</font><br></div></div></div></div></div><div id="21518f5a-e713-4da0-be6b-f01922734036" class="sc-bZQynM sc-chPdSV container  sc-elJkPf gUwhjA"></div><div id="1b8f05c4-25ea-43cf-995a-fda295642baa" class="sc-bZQynM sc-chPdSV container  sc-elJkPf gUwhjA"></div><div id="20e67196-e06d-4ae1-97c3-8cb7cb2246e8" class="sc-bZQynM sc-chPdSV container  sc-elJkPf FUODU"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT gIwpNj"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH dlUpKb"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV kbDTHz"><b style="background-color: rgb(241, 241, 241);">É POSSÍVEL CONSQUISTAR MELHORES RESULTADOS A PARTIR DE UMA BOA RELAÇÃO COM OS CAVALOS?
+</b></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV bLyVqb"><font color="#000000" style="background-color: rgb(241, 241, 241);">Muitas pessoas não entendem como construir uma relação de confiança e fazer com que o cavalo fique a vontade com você durante o treinamento porque:</font><div><font color="#000000" style="background-color: rgb(241, 241, 241);"><br></font><div><font color="#000000" style="background-color: rgb(241, 241, 241);">• Não conhecem sobre o comportamento natural dos cavalos</font></div><div><font color="#000000" style="background-color: rgb(241, 241, 241);">• Não aprenderam a constuir um horsemanship de QUALIDADE</font></div><div><font color="#000000" style="background-color: rgb(241, 241, 241);">• Não investem em melhorar a equitação</font></div><div><font color="#000000" style="background-color: rgb(241, 241, 241);">•&nbsp;Não tem um plano de treinamento do cavalo</font></div></div></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV jDhQOv"><b style="">Mas eu posso te afimar que é possível construir uma relação de <font color="#d58c21">CONFIANÇA </font>com seu cavalo, e o melhor, respeitando o seu cavalo, sem usar a força, aprendendo a </b><b><font color="#d58c21">ENTENDER </font></b><b style="">o seu cavalo.
+</b></div></div><div class="sc-bZQynM sc-chPdSV sc-kkGfuU kgQbPR"><button type="button" disabled class="sc-dnqmqq btn  sc-kgoBCf bqCQC">Garantir meu desconto. Apenas 10 x sem juros de R$ 29,70</button></div></div></div></div><div id="c0d84db0-e4cb-426e-aa1f-9c6c70e19e5b" class="sc-bZQynM sc-chPdSV container  sc-elJkPf gUwhjA"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT bybBlR"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH Kbxny"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV ivxTt"><div>Veja como essas pessoas conseguiram transformar sua relação com os cavalos através dos nossos 3 PILARES
+</div></div></div><div class="sc-bZQynM sc-chPdSV sc-dNLxif cWUyzf"><div class="sc-bZQynM sc-chPdSV sc-jbKcbu fvCKQS"><div style="padding: 2%; align-self: center; justify-self: center;" class="sc-bZQynM sc-chPdSV iGVYNu"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background: new 0 0 492 492; width: 2rem; cursor: pointer;" class="sc-kAzzGY bmAPxc"><g><g><path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12 C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084 c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864 l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"></path></g></g></svg></div><div class="sc-hqyNC cJbJkH"><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/NHaeB7BFkO9bkzuRyJcA.png" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:&quot;921&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez sc-gGBfsJ eHMvBM" /><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/3bLgmvWtG0OJwnXR7tFIw.png" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:&quot;921&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez sc-gGBfsJ iFNXgY" /><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/KBG95kas6UWIuH8uLpNuyQ.png" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:&quot;921&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez sc-gGBfsJ iFNXgY" /><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/QXZA8NpPTkKoaG4bafmEw.png" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:&quot;921&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez sc-gGBfsJ iFNXgY" /><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/JMEv0dTFbUi49EKz0LjRg.png" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:&quot;921&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez sc-gGBfsJ iFNXgY" /><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/c4ALzQMEZUKHjekSGnyWww.png" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:&quot;921&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez sc-gGBfsJ iFNXgY" /><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/5q4xWwwmUyKVffCYxLgQ.png" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:&quot;921&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez sc-gGBfsJ iFNXgY" /></div><div style="padding: 2%; align-self: center; justify-self: center;" class="sc-bZQynM sc-chPdSV iGVYNu"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background: new 0 0 492 492; width: 2rem; cursor: pointer; transform: rotate(180deg);" class="sc-kAzzGY bmAPxc"><g><g><path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12 C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084 c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864 l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"></path></g></g></svg></div></div><div class="sc-bZQynM sc-chPdSV sc-bbmXgH cZhJOy"><div class="sc-bZQynM sc-chPdSV sc-jnlKLf kAuPCu"></div><div class="sc-bZQynM sc-chPdSV sc-jnlKLf jeXYp"></div><div class="sc-bZQynM sc-chPdSV sc-jnlKLf jeXYp"></div><div class="sc-bZQynM sc-chPdSV sc-jnlKLf jeXYp"></div><div class="sc-bZQynM sc-chPdSV sc-jnlKLf jeXYp"></div><div class="sc-bZQynM sc-chPdSV sc-jnlKLf jeXYp"></div><div class="sc-bZQynM sc-chPdSV sc-jnlKLf jeXYp"></div></div></div></div></div></div><div id="dacf6032-12d4-47af-97d2-4af01889ad71" class="sc-bZQynM sc-chPdSV container  sc-elJkPf btgsUV"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT bybBlR"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH hAyorR"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV deoOFv"><div>CONHEÇA NOSSOS 3 PILARES
+</div></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV gexvjY"><div>3 cursos que formam a base da UC
+</div></div></div><div class="sc-bZQynM img-fluid  sc-chPdSV eWqveh"><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/deVOyRCF00CSCeOqYO7qLg.png" data-widthmap="{&quot;natural&quot;:&quot;768&quot;,&quot;style&quot;:null,&quot;tablet&quot;:null,&quot;mobile&quot;:&quot;369&quot;}" class="sc-iwsKbI sc-kGXeez frUGRP" /></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV txUbm"><div>3 CURSOS DE R$ <strike>1.000,00</strike> POR APENAS R$ 297,00 EM ATÉ 10X SEM JUROS
+</div></div></div></div></div><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT iMYOhA"><div class="sc-bZQynM sc-chPdSV col-md-4  sc-lhVmIH hzXcGJ"><div class="sc-bZQynM img-fluid  sc-chPdSV eWqveh"><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/D1mFhSBYXken7gzKEmyUoQ.png" data-widthmap="{&quot;natural&quot;:&quot;1000&quot;,&quot;style&quot;:&quot;210&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:&quot;300&quot;}" class="sc-iwsKbI sc-kGXeez hbbeKD" /></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV eHOecC"><b>Horsemanship &amp; Comportamento Natural
+</b></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV fcVEWk">É fundamental respeitar a individualidade do animal, entender como um cavalo age e também como reage. Isto faz com que muito do que ocorre no dia a dia, que às vezes é considerado problema, possa ser resolvido facilmente.
+</div></div></div><div class="sc-bZQynM sc-chPdSV col-md-4  sc-lhVmIH jUTAso"><div class="sc-bZQynM img-fluid  sc-chPdSV eWqveh"><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/LD5xU6aMMEC37cOQpt02tA.png" data-widthmap="{&quot;natural&quot;:&quot;1000&quot;,&quot;style&quot;:&quot;210&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:&quot;300&quot;}" class="sc-iwsKbI sc-kGXeez hbbeKD" /></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV eHOecC"><b>Equitação Inteligente&nbsp;</b><br></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV fcVEWk">Sua grande oportunidade de aprender as bases que formam uma equitação de qualidade. A melhor maneira de descomplicar a equitação e aprender da forma certa é buscando conhecimento de qualidade. Isso é o que vai te dar base para que você pratique a partir de uma boa estrutura.
+</div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV fcVEWk">Sua grande oportunidade de aprender as bases que formam uma equitação de qualidade. A melhor maneira de descomplicar a equitação e aprender da forma certa é buscando conhecimento de qualidade. Isso é o que vai te dar base para que você pratique a partir de uma boa estrutura.
+</div></div></div><div class="sc-bZQynM sc-chPdSV col-md-4  sc-lhVmIH jUTAso"><div class="sc-bZQynM img-fluid  sc-chPdSV eWqveh"><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/MBLvt1HH70WqHBcDI8RT4w.png" data-widthmap="{&quot;natural&quot;:&quot;1000&quot;,&quot;style&quot;:&quot;210&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:&quot;300&quot;}" class="sc-iwsKbI sc-kGXeez hbbeKD" /></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV eHOecC"><b>15 Exercícios de Horsemanship&nbsp;</b><br></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV fcVEWk">Para você aplicar os conhecimentos no dia a dia. Neste curso, serão apresentados 15 exercícios progressivos para você trabalhar confiança, respeito, educação e controle do seu cavalo.
+</div></div></div></div><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT bybBlR"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH dCdoMD"><div class="sc-bZQynM sc-chPdSV sc-kkGfuU kgQbPR"><button type="button" disabled class="sc-dnqmqq btn  sc-kgoBCf gHpnnW">Garantir meu desconto. Apenas 10x sem juros de R$ 29,70</button></div></div></div></div><div id="2e84eb51-5773-490a-95e7-6ad10a62dd2f" class="sc-bZQynM sc-chPdSV container  sc-elJkPf btgsUV"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT bybBlR"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH dCdoMD"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV iWCXLo"><div>O QUE VOCÊ VAI APRENDER</div></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV gVcTwg"><b>EM CADA CURSO</b></div></div></div></div><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT dmygd"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH dCdoMD"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV fVIvnW"><b><font color="#ffffff">Horsemanship e Comportamento Natural&nbsp;&nbsp;</font></b><br></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV dOiCvw"><div><font color="#ffffff">1. A Natureza dos Cavalos</font></div><div><font color="#ffffff">2. Etologia
+A Vida na Manada</font></div><div><font color="#ffffff">3. O que é Horsemanship</font></div><div><font color="#ffffff">4. O Início</font></div><div><font color="#ffffff">5. Colocar o Cabresto</font></div><div><font color="#ffffff">6. Exercícios de Guia</font></div><div><font color="#ffffff">7. Bandeira</font></div></div></div></div></div><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT icpSMg"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH dCdoMD"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV hRBgNG"><b><font color="#ffffff">Equitação Inteligente</font></b><br></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV kwTBIt"><div><font color="#ffffff">1.&nbsp;<span style="background-color: initial;">Flexionamento de pescoço ao cabresto</span></font></div><div><font color="#ffffff">2.&nbsp;<span style="background-color: initial;">Flexionamento de coluna ao cabresto</span></font></div><div><font color="#ffffff">3.&nbsp;<span style="background-color: initial;">Trabalho de garupa e pescoço ao cabresto</span></font></div><div><font color="#ffffff">4.&nbsp;<span style="background-color: initial;">Como vestir a cabeçada</span></font></div><div><font color="#ffffff">5.&nbsp;<span style="background-color: initial;">Flexionamento de pescoço com embocabura</span></font></div><div><font color="#ffffff">6.&nbsp;<span style="background-color: initial;">Trabalho de pescoço e garupa com a embocadura</span></font></div><div><font color="#ffffff">7.&nbsp;<span style="background-color: initial;">Como colocar a sela</span></font></div><div><font color="#ffffff"><span style="background-color: initial;">8.&nbsp;</span><span style="background-color: initial;">Hora de montar</span></font></div><div><font color="#ffffff"><span style="background-color: initial;">9.&nbsp;</span><span style="background-color: initial;">Flexionamento de pescoço montado</span></font></div><div><font color="#ffffff"><span style="background-color: initial;">10.&nbsp;</span><span style="background-color: initial;">Trabalho de garupa e pesçoço montado</span></font></div><div><font color="#ffffff"><span style="background-color: initial;">11.&nbsp;</span><span style="background-color: initial;">Como montar da cerca</span></font></div><div><font color="#ffffff"><span style="background-color: initial;">12.&nbsp;</span><span style="background-color: initial;">Como parar com só uma rédea</span></font></div><div><span style="background-color: initial;"><font color="#ffffff">13. Controle de velocidade</font></span></div><div><span style="background-color: initial;"><font color="#ffffff">14. Como ensinar o cavalo a ficar parado</font></span></div><div><span style="background-color: initial;"><font color="#ffffff">15. Como ensinar o cavalo a abrir porteira</font></span></div><div><span style="background-color: initial;"><font color="#ffffff">16. Passeio com controle</font></span></div></div></div></div></div><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT icpSMg"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH dCdoMD"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV cNcEUz"><b><font color="#ffffff">15 Exercícios de Horsemanship&nbsp;</font></b><br></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV gKmCdB"><div><font color="#ffffff">O curso tem como base 4 sessões:</font></div><div><font color="#ffffff"><br></font></div><div><font color="#ffffff">1.&nbsp;<span style="background-color: initial;">Exercícios de educação e controle ao cabresto</span></font></div><div><font color="#ffffff">2. Exercícios de educação e controle de pressão</font></div><div><font color="#ffffff">3.&nbsp;<span style="background-color: initial;">Exercícios de educação e controle de movimentos</span></font></div><div><font color="#ffffff">4.&nbsp;<span style="background-color: initial;">Exercícios de educação de controle de pressão para as situações reais.</span></font></div></div></div></div></div></div><div id="a181fa5c-eb96-4da1-8ffa-43f957800bf1" class="sc-bZQynM sc-chPdSV container  sc-elJkPf etsVSu"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT bybBlR"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH dCdoMD"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV eWTpyL"><div>*ao comprar o combo você terá acesso por 1 ano a todo conteúdo
+</div></div></div><div class="sc-bZQynM sc-chPdSV sc-kkGfuU kgQbPR"><button type="button" disabled class="sc-dnqmqq btn  sc-kgoBCf gHpnnW">Garantir meu desconto</button></div></div></div></div><div id="3029a88f-a9e1-4864-a74c-bb157f3eceed" class="sc-bZQynM sc-chPdSV container  sc-elJkPf gUwhjA"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT jShDgg"><div class="sc-bZQynM sc-chPdSV col-md-12  sc-lhVmIH dCdoMD"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV jHSSPH"><font color="#ffffff">E ainda mais 2 BÔNUS SUPER ESPECIAIS
+</font></div></div></div></div></div><div id="66e96a3c-af98-40e8-a07c-e02b17c2a688" class="sc-bZQynM sc-chPdSV container  sc-elJkPf btgsUV"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT eheyaw"><div class="sc-bZQynM sc-chPdSV col-md-6  sc-lhVmIH dCdoMD"><div class="sc-bZQynM img-fluid  sc-chPdSV eWqveh"><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/RWlWURl9Pk6ZOyJw6Ih1yQ.png" data-widthmap="{&quot;natural&quot;:&quot;1536&quot;,&quot;style&quot;:&quot;461&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez cACjrK" /></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV jmnztH"><div>E-book: Introdução à Nutrição dos Equinos
+</div></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV iLHVaK"><div><span style="font-weight: normal;">Garanta uma vida mais saudável para o seu cavalo
+</span></div></div></div></div><div class="sc-bZQynM sc-chPdSV col-md-6  sc-lhVmIH dCdoMD"><div class="sc-bZQynM img-fluid  sc-chPdSV eWqveh"><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/gYsCWz0EkmrVgncSK3c3Q.png" data-widthmap="{&quot;natural&quot;:&quot;1536&quot;,&quot;style&quot;:&quot;461&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-iwsKbI sc-kGXeez cACjrK" /></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV ccYwpK"><div>E-book: Selas e Embocaduras
+</div></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV efVnqA"><span style="font-weight: normal;">Conheça os diferentes tipos de sela, embocaduras e seus usos e ações&nbsp;&nbsp;</span><br></div></div></div></div></div><div id="87ceeb7c-7917-4a2a-8bd3-d61a57b34aaa" class="sc-bZQynM sc-chPdSV container  sc-elJkPf ccpJuj"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT bJjUXB"><div class="sc-bZQynM sc-chPdSV col-md-5  sc-lhVmIH kRrKMF"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV drSlEz"><b>Sobre nós&nbsp;</b><br></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV kLBMtV"><div><b><font color="#000000">A UC é uma escola que oferece cursos e programas livres em diversas áreas da equinocultura.</font></b></div><div><b><font color="#000000"><br></font></b></div><div><b><font color="#000000">Somos uma escola livre, que abrange o universo do cavalo como um todo, através de cursos rápidos, cursos de média e longa durações.</font></b></div><div><b><font color="#000000"><br></font></b></div><div><b><font color="#000000">A UC, portanto, não é uma universidade formal.</font></b></div></div></div><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV cSweVX"><div>A UC foi fundada em 1997, a partir da ideia de ser um local onde as pessoas pudessem buscar, levar, trocar, compartilhar conhecimento sobre cavalos em experiências agradáveis e únicas.</div><div><br></div><div>Oferecemos cursos e programas livres em diversas áreas da equinocultura. É uma escola livre, no sentido de que abrange o universo do cavalo como um todo, através de cursos rápidos, cursos de média e longa durações. A UC, portanto, não é uma universidade formal. O nome vem de Universo do Cavalo, no sentido de sermos absolutamente dedicados somente aos cavalos elaborando soluções de conhecimento para todo o mercado.</div></div></div><div class="sc-bZQynM sc-chPdSV sc-kkGfuU kgQbPR"><button type="button" disabled class="sc-dnqmqq btn  sc-kgoBCf gHpnnW">Quero garantir os 3 cursos por 10x sem juros de R$ 29,70</button></div></div><div class="sc-bZQynM sc-chPdSV col-md-7  sc-lhVmIH dCdoMD"><div class="sc-bZQynM img-fluid  sc-chPdSV icaWnA"><img data-src="https://rck.imgix.net/yTtdk3lZmUiwmdAKZYnYQ/images/Jb8yKMvXy0ed9qz1MkpOA.png" data-widthmap="{&quot;natural&quot;:&quot;1080&quot;,&quot;style&quot;:&quot;637&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:&quot;346&quot;}" class="sc-iwsKbI sc-kGXeez dEQGdx" /></div></div></div></div><div id="31415d24-6baa-42d9-923c-318b1d79141e" class="sc-bZQynM sc-chPdSV container  sc-elJkPf bHWSud"><div class="sc-bZQynM sc-chPdSV row  sc-bYSBpT VWCrQ"><div class="sc-bZQynM sc-chPdSV col-md-6  sc-lhVmIH dCdoMD"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV caNQUW"><font color="#ffffff">© 2022 – UC. Todos os direitos reservados.&nbsp;&nbsp;</font><br></div></div></div><div class="sc-bZQynM sc-chPdSV col-md-6  sc-lhVmIH dCdoMD"><div class="sc-frDJqD egYmeV"><div class="sc-bZQynM sc-chPdSV kAhRyF"><a href="https://doctorsites.com.br/politica-de-privacidade"><font color="#ffffff">Políticas de Privacidade</font></a><br></div></div></div></div></div></div><script type="text/javascript" async>window.initialReduxState = {"source":{"board":[{"$$typeof":"react.element","type":"special","key":"a35690","ref":null,"props":{"rck_id":"a35690","className":"","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[],"name":"a35690","rck_element":"script","isHead":true,"code":"\u003Cstyle type=\"text\u002Fcss\"\u003E\n\t\t.display-date {\n\t\t\tdisplay: block;\n\t\t\tposition: relative;\n\t\t\theight: auto;\n\t\t\twidth: auto;\n\t\t\tmargin: 10px;\n\t\t\tpadding: 10px;\n\t\t\tborder: 1px solid black;\n\t\t\tbackground-color: #f2f2f2;\n\t\t\ttext-align: center;\n\t\t\tfont-size: 16px;\n\t\t\tfont-weight: bold;\n\t\t}\n\t\u003C\u002Fstyle\u003E"},"_owner":null},{"$$typeof":"react.element","type":"special","key":"8ca395","ref":null,"props":{"rck_id":"8ca395","className":"","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[],"name":"8ca395","rck_element":"script","code":"\u003Cscript type=\"text\u002Fjavascript\"\u003E\n\t\tdocument.addEventListener(\"DOMContentLoaded\", function() {\n\t\t\tconsole.log(\"O script foi executado!\");\n\n\t\t\tvar today = new Date();\n\t\t\tvar day = today.getDate();\n\t\t\tvar day2 = today.getDate()-1;\n\t\t\tvar day3 = today.getDate()-2;\n\t\t\tvar month = today.getMonth();\n\t\t\tvar monthList = [\"Janeiro\",\"Fevereiro\",\"Março\",\"Abril\",\"Maio\",\"Junho\",\"Julho\",\"Agosto\",\"Setembro\",\"Outubro\",\"Novembro\",\"Dezembro\"];\n\n\t\t\tif (month == 0 && day == 1) {\n\t\t\t\tday2 = \"31\";\n\t\t\t\tday3 = \"30\";\n\t\t\t} else if (month == 0 && day == 2) {\n\t\t\t\tday3 = \"31\";\n\t\t\t}\n\n\t\t\t\u002F\u002F Restante do código aqui...\n\n\t\t\tvar displayDateElements = document.getElementsByClassName(\"displayDate\");\n\t\t\tif (displayDateElements.length \u003E 0) {\n\t\t\t\tdisplayDateElements[0].innerHTML = '\u003Ccenter\u003ESomente nos dias: ' + '\u003Cb\u003E' + day3 + ', ' + day2 + ' e ' + day + ' de ' + monthList[month] + '\u003C\u002Fb\u003E você terá um desconto diferenciado de 95%';\n\t\t\t}\n\t\t});\n\t\u003C\u002Fscript\u003E","isHead":false},"_owner":null},{"$$typeof":"react.element","type":"special","key":"70de9a","ref":null,"props":{"rck_id":"70de9a","className":"","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[],"name":"70de9a","rck_element":"script","code":"\u003Ca href=\"https:\u002F\u002Fwa.me\u002F5521999526598\" class=\"bt-whatsApp\" target=\"_blank\"\n    style=\"right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;\"\u003E\n    \u003Cimg decoding=\"async\"\n        src=\"data:image\u002Fsvg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA\u002FPjxzdmcgdmlld0JveD0iMjYxOSA1MDYgMTIwIDEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzI3ZDA0NTsKICAgICAgfQoKICAgICAgLmNscy0yLCAuY2xzLTUgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgc3Ryb2tlOiAjZmZmOwogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgc3Ryb2tlOiBub25lOwogICAgICB9CiAgICA8L3N0eWxlPjwvZGVmcz48ZyBkYXRhLW5hbWU9Ikdyb3VwIDM2IiBpZD0iR3JvdXBfMzYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIzMDAgNzMpIj48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjYwIiBjeT0iNjAiIGRhdGEtbmFtZT0iRWxsaXBzZSAxOCIgaWQ9IkVsbGlwc2VfMTgiIHI9IjYwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMTkgNDMzKSIvPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzUiIGlkPSJHcm91cF8zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU0IDM4NikiPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzQiIGlkPSJHcm91cF8zNCI+PGcgY2xhc3M9ImNscy0yIiBkYXRhLW5hbWU9IkVsbGlwc2UgMTkiIGlkPSJFbGxpcHNlXzE5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NCA3NSkiPjxjaXJjbGUgY2xhc3M9ImNscy00IiBjeD0iMzEuNSIgY3k9IjMxLjUiIHI9IjMxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtNSIgY3g9IjMxLjUiIGN5PSIzMS41IiByPSIyOSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDI0LDE5MWwtNC42LDE2LjMsMTYuOS00LjcuOS01LjItMTEsMy41LDIuOS0xMC41WiIgZGF0YS1uYW1lPSJQYXRoIDEyNiIgaWQ9IlBhdGhfMTI2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTMyNSAtNjgpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTI2Niw5MGMwLS4xLDMuNS0xMS43LDMuNS0xMS43bDguNCw3LjlaIiBkYXRhLW5hbWU9IlBhdGggMTI3IiBpZD0iUGF0aF8xMjciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTY1IDQzKSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDM5LjMsMTYwLjZhOS40LDkuNCwwLDAsMC0zLjksNi4xYy0uNSwzLjksMS45LDcuOSwxLjksNy45YTUwLjg3Niw1MC44NzYsMCwwLDAsOC42LDkuOCwzMC4xODEsMzAuMTgxLDAsMCwwLDkuNiw1LjEsMTEuMzc4LDExLjM3OCwwLDAsMCw2LjQuNiw5LjE2Nyw5LjE2NywwLDAsMCw0LjgtMy4yLDkuODUxLDkuODUxLDAsMCwwLC42LTIuMiw1Ljg2OCw1Ljg2OCwwLDAsMCwwLTJjLS4xLS43LTcuMy00LTgtMy44cy0xLjMsMS41LTIuMSwyLjYtMS4xLDEuNi0xLjksMS42LTQuMy0xLjQtNy42LTQuNGExNS44NzUsMTUuODc1LDAsMCwxLTQuMy02cy42LS43LDEuNC0xLjhhNS42NjQsNS42NjQsMCwwLDAsMS4zLTIuNGMwLS41LTIuOC03LjYtMy41LTcuOUExMS44NTIsMTEuODUyLDAsMCwwLDE0MzkuMywxNjAuNloiIGRhdGEtbmFtZT0iUGF0aCAxMjgiIGlkPSJQYXRoXzEyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMjYuMzMyIC02OC40NjcpIi8+PC9nPjwvZz48L3N2Zz4=\"\n        alt=\"\" width=\"60px\"\u003E\n\u003C\u002Fa\u003E\n\u003Cspan id=\"alertWapp\"\n    style=\"right:30px; visibility: hidden; position:fixed;\twidth:17px;\theight:17px;bottom:90px; background:red;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; \"\u003E\n    1 \u003C\u002Fspan\u003E\n\u003Cdiv id=\"msg1\"\n    style=\"right: 90px; visibility: visible; background: #000; color: #fff; position: fixed; width: 200px; bottom: 52px; text-align: center; font-size: 13px; line-height: 31px; height: 32px; border-radius: 100px; z-index: 100; \"\u003E\n    Dúvidas? Entre em contato!\u003C\u002Fdiv\u003E\n\u003Cscript type=\"text\u002Fjavascript\"\u003E\n    function showIt2() {\n        document.getElementById(\"msg1\").style.visibility = \"visible\";\n    }\n    setTimeout(\"showIt2()\", 5000);\n\n    function hiddenIt() {\n        document.getElementById(\"msg1\").style.visibility = \"hidden\";\n    }\n    setTimeout(\"hiddenIt()\", 15000);\n\n    function showIt3() {\n        document.getElementById(\"msg1\").style.visibility = \"visible\";\n    }\n    setTimeout(\"showIt3()\", 25000);\n    msg1.onclick = function () {\n        document.getElementById('msg1').style.visibility = \"hidden\";\n    };\n\n    function alertW() {\n        document.getElementById(\"alertWapp\").style.visibility = \"visible\";\n    }\n    setTimeout(\"alertW()\", 15000);\n\u003C\u002Fscript\u003E"},"_owner":null},{"$$typeof":"react.element","type":"special","key":"e292c4","ref":null,"props":{"rck_id":"e292c4","className":"","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[],"name":"e292c4","rck_element":"script","code":"\t\u003Cscript\u003E\n\t\twindow.onload = function() {\n\t\t\tvar elementos = document.getElementsByClassName(\"esconde\");\n\t\t\tfor (var i = 0; i \u003C elementos.length; i++) {\n\t\t\t\telementos[i].style.display = \"none\";\n\t\t\t\tsetTimeout(function(elemento){\n\t\t\t\t\telemento.style.display = \"block\";\n\t\t\t\t}, 10000, elementos[i]);\n\t\t\t}\n\t\t};\n\t\u003C\u002Fscript\u003E","isHead":false},"_owner":null},{"$$typeof":"react.element","type":"div","key":"4cab40d8-aabd-42c7-bc9a-862e4a4cc9a6","ref":null,"props":{"rck_id":"4cab40d8-aabd-42c7-bc9a-862e4a4cc9a6","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","background":"url(https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FPVqgClvW4UyGoNWH118BCA.jpeg) center center  \u002F cover repeat scroll rgba(238, 126, 126, 0.9)","paddingTop":"40px","paddingRight":"0px","paddingBottom":"40px","paddingLeft":"0px","marginTop":"0px","marginRight":0,"marginBottom":0,"marginLeft":0,"positionNone":"none"},"children":[{"$$typeof":"react.element","type":"div","key":"9a73c14b-45c2-456e-a5e9-d6ff1c6e1a43","ref":null,"props":{"rck_id":"9a73c14b-45c2-456e-a5e9-d6ff1c6e1a43","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"e52edf56-f910-4cbb-97f4-74de288d8043","ref":null,"props":{"rck_id":"e52edf56-f910-4cbb-97f4-74de288d8043","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"d6713bf0-d9ed-454a-ba99-6a28ecf4cb64","ref":null,"props":{"rck_id":"d6713bf0-d9ed-454a-ba99-6a28ecf4cb64","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cfont color=\"#ffffff\"\u003ETRANSFORME A RELAÇÃO COM OS CAVALOS ATRAVÉS DOS \u003C\u002Ffont\u003E\u003Cfont color=\"#d58c21\"\u003E\u003Cu\u003E3 PILARES\u003C\u002Fu\u003E\u003C\u002Ffont\u003E\u003Cfont color=\"#ffffff\"\u003E DA UC\n\u003C\u002Ffont\u003E","style":{"fontSize":"28px","fontWeight":"700","color":"#212529","fontFamily":"Roboto","marginTop":"40px","marginRight":0,"marginBottom":0,"marginLeft":0,"paddingTop":"0px","paddingRight":"0px","paddingBottom":"8px","paddingLeft":"0px"},"mobile":{"fontSize":"24px","lineHeight":"30px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"bd9d25ba-c361-47ff-ad05-ceb7a863e455","ref":null,"props":{"className":"lead","rck_id":"bd9d25ba-c361-47ff-ad05-ceb7a863e455","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cfont color=\"#ffffff\"\u003EConquiste a confiança do seu cavalo, melhore sua equitação e aprenda a treinar seu cavalo mesmo que você esteja iniciando no mundo dos cavalos.\n\n\u003C\u002Ffont\u003E","style":{"fontSize":"18px","color":"#212529","fontFamily":"Roboto Condensed","fontWeight":"500","paddingTop":"5px","paddingRight":"150px","paddingBottom":"5px","paddingLeft":"150px"},"mobile":{"paddingTop":"5px","paddingRight":"0px","paddingBottom":"5px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"5920f221-90ad-411a-b4e0-32dba07d84f8","ref":null,"props":{"className":"lead","rck_id":"5920f221-90ad-411a-b4e0-32dba07d84f8","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cfont color=\"#ffffff\"\u003E3 CURSOS ONLINE\n\n\n\n\u003C\u002Ffont\u003E","style":{"fontSize":"20px","color":"#212529","fontFamily":"Roboto","fontWeight":"400","paddingTop":"30px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"088e50f3-a6b1-43e1-afac-77f28dfdbdff","ref":null,"props":{"rck_id":"088e50f3-a6b1-43e1-afac-77f28dfdbdff","rck_type":"element","rck_element":"customcode","code":"\u003Cp class=\"displayDate\"\u003E\u003C\u002Fp\u003E","elementClasses":["displayDate"]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"741fbd3d-434a-48fa-be70-584dd5bd5c2a","ref":null,"props":{"className":"lead","rck_id":"741fbd3d-434a-48fa-be70-584dd5bd5c2a","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003ECOM\u003C\u002Ffont\u003E\u003Cfont color=\"#0693e3\"\u003E 80%\u003C\u002Ffont\u003E\u003Cfont color=\"#ffffff\"\u003E DE DESCONTO\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":"32px","color":"#212529","fontFamily":"Montserrat","fontWeight":"900"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"ec5443c0-3013-46a6-8a96-26e97314e756","ref":null,"props":{"className":"lead","rck_id":"ec5443c0-3013-46a6-8a96-26e97314e756","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cu style=\"font-weight: normal;\"\u003E\u003Cfont color=\"#ffffff\"\u003E10x sem juros de R$ 29,70&nbsp;&nbsp;\u003C\u002Ffont\u003E\u003C\u002Fu\u003E\u003Cbr\u003E","style":{"fontSize":"18px","color":"#212529","fontFamily":"Montserrat","fontWeight":"700","paddingTop":"5px","paddingRight":"5px","paddingBottom":"28px","paddingLeft":"5px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"1d46f991-2599-4c0a-9dab-10466deb3fdd","ref":null,"props":{"className":"embed-responsive embed-responsive-16by9","rck_id":"1d46f991-2599-4c0a-9dab-10466deb3fdd","rck_type":"element","rck_element":"video","style":{"display":"flex","width":"70%","borderRadius":"0px 0px 0px 0px","border":"0px solid rgba(218, 210, 210, 0)"},"src":"https:\u002F\u002Fplayer.vimeo.com\u002Fvideo\u002F804061528","mobile":{"width":"100%"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"2a2a00ee-4015-4076-bfd2-36601f4594f5","ref":null,"props":{"className":"lead","rck_id":"2a2a00ee-4015-4076-bfd2-36601f4594f5","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cfont color=\"#ffffff\" style=\"font-weight: normal;\"\u003EEntão clique no botão abaixo e GARANTA \u003C\u002Ffont\u003E\u003Cfont color=\"#0693e3\"\u003Eseu desconto agora.&nbsp;&nbsp;\u003C\u002Ffont\u003E\u003Cbr\u003E","style":{"fontSize":"18px","color":"#212529","fontFamily":"Montserrat","fontWeight":"700","paddingTop":"24px","paddingRight":"5px","paddingBottom":"28px","paddingLeft":"5px"}},"_owner":null},{"$$typeof":"react.element","type":"button","key":"3d9aac7c-6564-4234-bfdc-e5a93105f3f2","ref":null,"props":{"rck_id":"3d9aac7c-6564-4234-bfdc-e5a93105f3f2","className":"btn","style":{"background":"url() center center \u002F auto repeat scroll, linear-gradient(to right, rgba(210, 139, 33, 1), rgba(50, 105, 9, 1))","border":"0px solid rgba(218, 210, 210, 0)","fontFamily":"Montserrat","fontWeight":"700","fontSize":"18px","color":"rgba(255, 255, 255, 1)","borderRadius":"30px 30px 30px 30px","paddingTop":"15px","paddingRight":"50px","paddingBottom":"15px","paddingLeft":"50px"},"rck_type":"element","rck_element":"button","text":"QUERO APROVEITAR O DESCONTO","aria-label":"Button","type":"external","newWindow":false,"source":"https:\u002F\u002Fpay.hotmart.com\u002FV71808298A?checkoutMode=10&off=il5hdz4o&offDiscount=70PORCENTO&bid=1678197281349","redirectType":"noAction","callback":"","elementClasses":["esconde"],"motion":{"effect":"Pulse","duration":"normal","delay":"0","iterationCount":"infinite","activation":"hover"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"1a3634fb-9a5b-4b35-841d-398fd0340d83","ref":null,"props":{"className":"lead","rck_id":"1a3634fb-9a5b-4b35-841d-398fd0340d83","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cfont color=\"#ffffff\" style=\"font-weight: normal;\"\u003E3 cursos por apenas 10x R$ 29,70\n\n\u003C\u002Ffont\u003E\u003Cbr\u003E","style":{"fontSize":"16px","color":"#212529","fontFamily":"Montserrat","fontWeight":"500","paddingTop":"18px","paddingRight":"5px","paddingBottom":"80px","paddingLeft":"5px"},"elementClasses":["esconde"]},"_owner":null}]},"_owner":null}]},"_owner":null}],"contentboxed":"false","mobile":{"marginTop":"0px","marginRight":0,"marginBottom":0,"marginLeft":0,"paddingTop":"40px","paddingRight":"20px","paddingBottom":"40px","paddingLeft":"20px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"21518f5a-e713-4da0-be6b-f01922734036","ref":null,"props":{"rck_id":"21518f5a-e713-4da0-be6b-f01922734036","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"1b8f05c4-25ea-43cf-995a-fda295642baa","ref":null,"props":{"rck_id":"1b8f05c4-25ea-43cf-995a-fda295642baa","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"20e67196-e06d-4ae1-97c3-8cb7cb2246e8","ref":null,"props":{"rck_id":"20e67196-e06d-4ae1-97c3-8cb7cb2246e8","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"a7678fc8-47e0-4375-b038-ef402c153009","ref":null,"props":{"rck_id":"a7678fc8-47e0-4375-b038-ef402c153009","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","background":"url() center center \u002F auto repeat scroll rgba(39, 32, 32, 1)"},"children":[{"$$typeof":"react.element","type":"div","key":"70aeb580-2a69-4172-97f7-c1427ef49ff2","ref":null,"props":{"rck_id":"70aeb580-2a69-4172-97f7-c1427ef49ff2","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"background":"url() center center \u002F auto repeat scroll rgba(241, 241, 241, 1)","paddingTop":"0px","paddingRight":"50px","paddingBottom":"60px","paddingLeft":"50px","marginTop":"0px","marginRight":0,"marginBottom":0,"marginLeft":0},"children":[{"$$typeof":"react.element","type":"div","key":"758bacd6-fd34-443b-bc89-5ee88f95060e","ref":null,"props":{"className":"lead","rck_id":"758bacd6-fd34-443b-bc89-5ee88f95060e","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb style=\"background-color: rgb(241, 241, 241);\"\u003EÉ POSSÍVEL CONSQUISTAR MELHORES RESULTADOS A PARTIR DE UMA BOA RELAÇÃO COM OS CAVALOS?\n\u003C\u002Fb\u003E","style":{"fontSize":"18px","color":"#212529","fontFamily":"Montserrat","fontWeight":"500","textAlign":"left","paddingTop":"60px","paddingRight":"0px","paddingBottom":"16px","paddingLeft":"0px"},"mobile":{"textAlign":"left","paddingTop":"0px","paddingRight":"0px","paddingBottom":"16px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"2908c71d-e9a2-45a1-901d-d1320797a6e6","ref":null,"props":{"className":"lead","rck_id":"2908c71d-e9a2-45a1-901d-d1320797a6e6","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cfont color=\"#000000\" style=\"background-color: rgb(241, 241, 241);\"\u003EMuitas pessoas não entendem como construir uma relação de confiança e fazer com que o cavalo fique a vontade com você durante o treinamento porque:\u003C\u002Ffont\u003E\u003Cdiv\u003E\u003Cfont color=\"#000000\" style=\"background-color: rgb(241, 241, 241);\"\u003E\u003Cbr\u003E\u003C\u002Ffont\u003E\u003Cdiv\u003E\u003Cfont color=\"#000000\" style=\"background-color: rgb(241, 241, 241);\"\u003E• Não conhecem sobre o comportamento natural dos cavalos\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#000000\" style=\"background-color: rgb(241, 241, 241);\"\u003E• Não aprenderam a constuir um horsemanship de QUALIDADE\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#000000\" style=\"background-color: rgb(241, 241, 241);\"\u003E• Não investem em melhorar a equitação\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#000000\" style=\"background-color: rgb(241, 241, 241);\"\u003E•&nbsp;Não tem um plano de treinamento do cavalo\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":"16px","color":"rgba(255, 255, 255, 1)","textAlign":"left","fontFamily":"Montserrat","fontWeight":"400","lineHeight":"22px"},"mobile":{"textAlign":"left"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"5b561dfd-bfdf-49b4-92bb-f87c92283d24","ref":null,"props":{"className":"lead","rck_id":"5b561dfd-bfdf-49b4-92bb-f87c92283d24","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb style=\"\"\u003EMas eu posso te afimar que é possível construir uma relação de \u003Cfont color=\"#d58c21\"\u003ECONFIANÇA \u003C\u002Ffont\u003Ecom seu cavalo, e o melhor, respeitando o seu cavalo, sem usar a força, aprendendo a \u003C\u002Fb\u003E\u003Cb\u003E\u003Cfont color=\"#d58c21\"\u003EENTENDER \u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003Cb style=\"\"\u003Eo seu cavalo.\n\n\u003C\u002Fb\u003E","style":{"fontSize":"20px","color":"#212529","paddingTop":"24px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px","fontFamily":"Montserrat"},"mobile":{"textAlign":"left"}},"_owner":null},{"$$typeof":"react.element","type":"button","key":"e8349ed7-9583-4894-95d2-dbf621cd3325","ref":null,"props":{"rck_id":"e8349ed7-9583-4894-95d2-dbf621cd3325","className":"btn","style":{"background":"url() center center \u002F auto repeat scroll, linear-gradient(to right, rgba(210, 139, 33, 1), rgba(50, 105, 9, 1))","border":"0px solid rgba(218, 210, 210, 0)","fontFamily":"Montserrat","fontWeight":"700","fontSize":"18px","color":"rgba(255, 255, 255, 1)","borderRadius":"30px 30px 30px 30px","paddingTop":"15px","paddingRight":"50px","paddingBottom":"15px","paddingLeft":"50px","marginTop":"30px","marginRight":0,"marginBottom":0,"marginLeft":0,"width":"63%"},"rck_type":"element","rck_element":"button","text":"Garantir meu desconto. Apenas 10 x sem juros de R$ 29,70","aria-label":"Button","type":"external","newWindow":false,"source":"https:\u002F\u002Fpay.hotmart.com\u002FV71808298A?checkoutMode=10&off=il5hdz4o&offDiscount=70PORCENTO&bid=1678197281349","redirectType":"noAction","callback":"","motion":{"effect":"Pulse","duration":"slow","delay":0,"iterationCount":"1","activation":"hover"},"mobile":{"width":"100%"}},"_owner":null}]},"_owner":null}]},"_owner":null}],"mobile":{"paddingTop":"40px","paddingRight":"20px","paddingBottom":"40px","paddingLeft":"20px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"c0d84db0-e4cb-426e-aa1f-9c6c70e19e5b","ref":null,"props":{"rck_id":"c0d84db0-e4cb-426e-aa1f-9c6c70e19e5b","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"a1ddfaf0-12f3-4faa-96ec-47527c89094b","ref":null,"props":{"rck_id":"a1ddfaf0-12f3-4faa-96ec-47527c89094b","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"a8cf2d8f-b508-4119-9aae-43e5d5d634cf","ref":null,"props":{"rck_id":"a8cf2d8f-b508-4119-9aae-43e5d5d634cf","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"0px","paddingRight":"50px","paddingBottom":"50px","paddingLeft":"50px"},"children":[{"$$typeof":"react.element","type":"div","key":"e85e67fb-fbc4-4b28-8d9c-1608b02bc821","ref":null,"props":{"rck_id":"e85e67fb-fbc4-4b28-8d9c-1608b02bc821","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003EVeja como essas pessoas conseguiram transformar sua relação com os cavalos através dos nossos 3 PILARES\n\u003C\u002Fdiv\u003E","style":{"fontSize":"26px","fontWeight":"700","color":"#212529","marginTop":"89px","marginRight":0,"marginBottom":0,"marginLeft":0,"lineHeight":"36px","fontFamily":"Montserrat"},"mobile":{"fontFamily":"Montserrat","fontSize":"26px","lineHeight":"32px","paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"0px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"3176fcaf-6f0e-4ebd-809d-4174fb1a6c27","ref":null,"props":{"rck_id":"3176fcaf-6f0e-4ebd-809d-4174fb1a6c27","rck_type":"element","rck_element":"carousel","children":[{"$$typeof":"react.element","type":"img","key":"6b6dd562-1a5b-4ecc-a21d-61bc5419b75b","ref":null,"props":{"alt":"image","rck_type":"element","rck_id":"6b6dd562-1a5b-4ecc-a21d-61bc5419b75b","rck_element":"inlineImage","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FNHaeB7BFkO9bkzuRyJcA.png","style":{"objectFit":"cover"},"mobile":{"objectFit":"cover"}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"1b2a816e-acce-4ac0-aedc-07482b685d0c","ref":null,"props":{"alt":"image","rck_type":"element","rck_id":"1b2a816e-acce-4ac0-aedc-07482b685d0c","rck_element":"inlineImage","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002F3bLgmvWtG0OJwnXR7tFIw.png","style":{"objectFit":"cover"},"mobile":{"objectFit":"contain"}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"876940c7-d056-4a57-8ae7-4a1f40494c59","ref":null,"props":{"alt":"image","rck_type":"element","rck_id":"876940c7-d056-4a57-8ae7-4a1f40494c59","rck_element":"inlineImage","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FKBG95kas6UWIuH8uLpNuyQ.png","style":{"objectFit":"cover"},"mobile":{"objectFit":"contain"}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"08b0f85a-6915-4f27-92d3-88397d3d6b95","ref":null,"props":{"alt":"image","rck_type":"element","rck_id":"08b0f85a-6915-4f27-92d3-88397d3d6b95","rck_element":"inlineImage","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FQXZA8NpPTkKoaG4bafmEw.png","style":{"objectFit":"cover"},"mobile":{"objectFit":"contain"}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"d73627e7-2777-4cb0-8b7e-da5d3e75dc52","ref":null,"props":{"alt":"image","rck_type":"element","rck_id":"d73627e7-2777-4cb0-8b7e-da5d3e75dc52","rck_element":"inlineImage","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FJMEv0dTFbUi49EKz0LjRg.png","style":{"objectFit":"cover"},"mobile":{"objectFit":"contain"}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"552182cc-daa1-4c9c-9e0f-d09da947e805","ref":null,"props":{"alt":"image","rck_type":"element","rck_id":"552182cc-daa1-4c9c-9e0f-d09da947e805","rck_element":"inlineImage","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002Fc4ALzQMEZUKHjekSGnyWww.png","style":{"objectFit":"cover"},"mobile":{"objectFit":"contain"}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"020ff6db-5f54-4d01-9f97-7ac58090ef3f","ref":null,"props":{"alt":"image","rck_type":"element","rck_id":"020ff6db-5f54-4d01-9f97-7ac58090ef3f","rck_element":"inlineImage","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002F5q4xWwwmUyKVffCYxLgQ.png","style":{"objectFit":"cover"},"mobile":{"objectFit":"contain"}},"_owner":null}],"style":{"width":"921px","height":"76px","paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"26px","marginRight":0,"marginBottom":0,"marginLeft":0},"numberOfCarousel":1},"_owner":null}]},"_owner":null}]},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"dacf6032-12d4-47af-97d2-4af01889ad71","ref":null,"props":{"rck_id":"dacf6032-12d4-47af-97d2-4af01889ad71","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"c81c874d-4565-4c91-8c40-4d2d56b34690","ref":null,"props":{"rck_id":"c81c874d-4565-4c91-8c40-4d2d56b34690","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"abb7172c-3c78-44c8-8338-be6226d337e5","ref":null,"props":{"rck_id":"abb7172c-3c78-44c8-8338-be6226d337e5","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"40px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","background":"url() center center \u002F auto repeat scroll rgba(241, 241, 241, 1)"},"children":[{"$$typeof":"react.element","type":"div","key":"6bd9cbb3-4116-45cd-814f-0f25636adbab","ref":null,"props":{"rck_id":"6bd9cbb3-4116-45cd-814f-0f25636adbab","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003ECONHEÇA NOSSOS 3 PILARES\n\u003C\u002Fdiv\u003E","style":{"fontSize":"18px","fontWeight":"500","color":"#212529","fontFamily":"Montserrat","marginTop":"0px","marginRight":0,"marginBottom":0,"marginLeft":0,"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"},"mobile":{"marginTop":"0px","marginRight":0,"marginBottom":0,"marginLeft":0,"fontSize":"16px","paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"ba4d6587-2571-46cb-8f11-c05eff3b16ab","ref":null,"props":{"rck_id":"ba4d6587-2571-46cb-8f11-c05eff3b16ab","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003E3 cursos que formam a base da UC\n\u003C\u002Fdiv\u003E","style":{"fontSize":"32px","fontWeight":"700","color":"#212529","fontFamily":"Montserrat"},"mobile":{"fontFamily":"Montserrat","fontSize":"28px","lineHeight":"32px"}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"5b083b52-b83e-4ee6-887c-33497d5198b6","ref":null,"props":{"className":"img-fluid","rck_id":"5b083b52-b83e-4ee6-887c-33497d5198b6","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FdeVOyRCF00CSCeOqYO7qLg.png","mobile":{"width":"369px","height":"199px"},"naturalWidth":"768px"},"_owner":null},{"$$typeof":"react.element","type":"div","key":"0cee199c-c55f-4a35-b4c1-f1efcc8d84b5","ref":null,"props":{"rck_id":"0cee199c-c55f-4a35-b4c1-f1efcc8d84b5","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003E3 CURSOS DE R$ \u003Cstrike\u003E1.000,00\u003C\u002Fstrike\u003E POR APENAS R$ 297,00 EM ATÉ 10X SEM JUROS\n\n\n\u003C\u002Fdiv\u003E","style":{"fontSize":"16px","fontWeight":"700","color":"#212529","fontFamily":"Montserrat","paddingTop":"5px","paddingRight":"5px","paddingBottom":"46px","paddingLeft":"5px"},"mobile":{"fontSize":"16px","lineHeight":"22px"}},"_owner":null}]},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"ac725f5e-b3dd-4af4-8e3e-73e83c59d7b5","ref":null,"props":{"rck_id":"ac725f5e-b3dd-4af4-8e3e-73e83c59d7b5","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"35d2282d-167b-4a78-a1d2-1ff9a5b2d35e","ref":null,"props":{"rck_id":"35d2282d-167b-4a78-a1d2-1ff9a5b2d35e","className":"col-md-4","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"30px","paddingRight":"30px","paddingBottom":"0px","paddingLeft":"30px","border":"0px solid rgba(255, 255, 255, 0)","borderRadius":"0px 0px 0px 0px"},"children":[{"$$typeof":"react.element","type":"img","key":"a5971a64-bb9d-467c-916c-c53ed07646ac","ref":null,"props":{"className":"img-fluid","rck_id":"a5971a64-bb9d-467c-916c-c53ed07646ac","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FD1mFhSBYXken7gzKEmyUoQ.png","style":{"width":"210px","height":"210px"},"naturalWidth":"1000px","mobile":{"width":"300px","height":"300px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"2c5c996f-8311-4427-8106-9d27186c208c","ref":null,"props":{"className":"lead","rck_id":"2c5c996f-8311-4427-8106-9d27186c208c","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb\u003EHorsemanship &amp; Comportamento Natural\n\u003C\u002Fb\u003E","style":{"fontSize":22,"color":"#212529","lineHeight":"28px","paddingTop":"16px","paddingRight":"5px","paddingBottom":"0px","paddingLeft":"5px","fontFamily":"Montserrat"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"d42a8ff5-b3dc-41a9-95ff-3ba7225804e2","ref":null,"props":{"className":"lead","rck_id":"d42a8ff5-b3dc-41a9-95ff-3ba7225804e2","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"É fundamental respeitar a individualidade do animal, entender como um cavalo age e também como reage. Isto faz com que muito do que ocorre no dia a dia, que às vezes é considerado problema, possa ser resolvido facilmente.\n\n","style":{"fontSize":"16px","color":"#212529","fontFamily":"Montserrat","lineHeight":"20px","paddingTop":"16px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px"}},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"6d6eb240-37e4-4103-98fc-f5774ad0b242","ref":null,"props":{"rck_id":"6d6eb240-37e4-4103-98fc-f5774ad0b242","className":"col-md-4","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"30px","paddingRight":"30px","paddingBottom":"30px","paddingLeft":"30px"},"children":[{"$$typeof":"react.element","type":"img","key":"7bddd91b-d9a4-45b7-841c-02ee21fc48d2","ref":null,"props":{"className":"img-fluid","rck_id":"7bddd91b-d9a4-45b7-841c-02ee21fc48d2","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FLD5xU6aMMEC37cOQpt02tA.png","style":{"width":"210px","height":"210px"},"naturalWidth":"1000px","mobile":{"width":"300px","height":"300px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"8241ea32-ecfd-4175-8cfc-8eed013921bb","ref":null,"props":{"className":"lead","rck_id":"8241ea32-ecfd-4175-8cfc-8eed013921bb","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb\u003EEquitação Inteligente&nbsp;\u003C\u002Fb\u003E\u003Cbr\u003E","style":{"fontSize":22,"color":"#212529","lineHeight":"28px","paddingTop":"16px","paddingRight":"5px","paddingBottom":"0px","paddingLeft":"5px","fontFamily":"Montserrat"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"fe1aa9d2-2509-40ae-8ff9-4b63ac39bd3a","ref":null,"props":{"className":"lead","rck_id":"fe1aa9d2-2509-40ae-8ff9-4b63ac39bd3a","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"Sua grande oportunidade de aprender as bases que formam uma equitação de qualidade. A melhor maneira de descomplicar a equitação e aprender da forma certa é buscando conhecimento de qualidade. Isso é o que vai te dar base para que você pratique a partir de uma boa estrutura.\n\n","style":{"fontSize":"16px","color":"#212529","fontFamily":"Montserrat","lineHeight":"20px","paddingTop":"16px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"971cc692-99cf-4f8f-97a6-b7cd46019b5e","ref":null,"props":{"className":"lead","rck_id":"971cc692-99cf-4f8f-97a6-b7cd46019b5e","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"Sua grande oportunidade de aprender as bases que formam uma equitação de qualidade. A melhor maneira de descomplicar a equitação e aprender da forma certa é buscando conhecimento de qualidade. Isso é o que vai te dar base para que você pratique a partir de uma boa estrutura.\n\n","style":{"fontSize":"16px","color":"#212529","fontFamily":"Montserrat","lineHeight":"20px","paddingTop":"16px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px"}},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"7413d528-fd6e-4504-b235-cf6328af2b8b","ref":null,"props":{"rck_id":"7413d528-fd6e-4504-b235-cf6328af2b8b","className":"col-md-4","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"30px","paddingRight":"30px","paddingBottom":"30px","paddingLeft":"30px"},"children":[{"$$typeof":"react.element","type":"img","key":"5b835f81-7c25-4b99-98d0-c1d9ae2030f3","ref":null,"props":{"className":"img-fluid","rck_id":"5b835f81-7c25-4b99-98d0-c1d9ae2030f3","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FMBLvt1HH70WqHBcDI8RT4w.png","style":{"width":"210px","height":"210px"},"naturalWidth":"1000px","mobile":{"width":"300px","height":"300px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"12b333cc-9c6d-4477-a60f-8f96ea7e43e3","ref":null,"props":{"className":"lead","rck_id":"12b333cc-9c6d-4477-a60f-8f96ea7e43e3","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb\u003E15 Exercícios de Horsemanship&nbsp;\u003C\u002Fb\u003E\u003Cbr\u003E","style":{"fontSize":22,"color":"#212529","lineHeight":"28px","paddingTop":"16px","paddingRight":"5px","paddingBottom":"0px","paddingLeft":"5px","fontFamily":"Montserrat"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"ade095cd-d786-4ff3-9cea-059a030a87e5","ref":null,"props":{"className":"lead","rck_id":"ade095cd-d786-4ff3-9cea-059a030a87e5","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"Para você aplicar os conhecimentos no dia a dia. Neste curso, serão apresentados 15 exercícios progressivos para você trabalhar confiança, respeito, educação e controle do seu cavalo.\n\n\n\n\n\n","style":{"fontSize":"16px","color":"#212529","fontFamily":"Montserrat","lineHeight":"20px","paddingTop":"16px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px"}},"_owner":null}]},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"0e668278-1748-4dc6-b7b9-797d8dcd9a2e","ref":null,"props":{"rck_id":"0e668278-1748-4dc6-b7b9-797d8dcd9a2e","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"b380511c-d783-420f-989f-6c0b009b2bb3","ref":null,"props":{"rck_id":"b380511c-d783-420f-989f-6c0b009b2bb3","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"button","key":"f0ba0dc0-ae9c-4e3f-9fa3-fa4f2111d8fe","ref":null,"props":{"rck_id":"f0ba0dc0-ae9c-4e3f-9fa3-fa4f2111d8fe","className":"btn","style":{"background":"url() center center \u002F auto repeat scroll, linear-gradient(to right, rgba(210, 139, 33, 1), rgba(50, 105, 9, 1))","border":"0px solid rgba(218, 210, 210, 0)","fontFamily":"Montserrat","fontWeight":"700","fontSize":"18px","color":"rgba(255, 255, 255, 1)","borderRadius":"30px 30px 30px 30px","paddingTop":"15px","paddingRight":"50px","paddingBottom":"15px","paddingLeft":"50px","marginTop":"30px","marginRight":0,"marginBottom":0,"marginLeft":0},"rck_type":"element","rck_element":"button","text":"Garantir meu desconto. Apenas 10x sem juros de R$ 29,70","aria-label":"Button","type":"external","newWindow":false,"source":"https:\u002F\u002Fpay.hotmart.com\u002FV71808298A?checkoutMode=10&off=il5hdz4o&offDiscount=70PORCENTO&bid=1678127354787","redirectType":"noAction","callback":"","motion":{"effect":"Pulse","duration":"slow","delay":0,"iterationCount":"1","activation":"hover"}},"_owner":null}]},"_owner":null}]},"_owner":null}],"mobile":{"paddingTop":"40px","paddingRight":"20px","paddingBottom":"40px","paddingLeft":"20px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"2e84eb51-5773-490a-95e7-6ad10a62dd2f","ref":null,"props":{"rck_id":"2e84eb51-5773-490a-95e7-6ad10a62dd2f","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"e3a8d454-ad88-4ba5-9049-4403bc267f89","ref":null,"props":{"rck_id":"e3a8d454-ad88-4ba5-9049-4403bc267f89","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"9d5ebbc0-d3f8-483a-b2f0-81f7865aa7a1","ref":null,"props":{"rck_id":"9d5ebbc0-d3f8-483a-b2f0-81f7865aa7a1","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"77ae717a-250f-45d8-964a-0b2a447940f8","ref":null,"props":{"className":"lead","rck_id":"77ae717a-250f-45d8-964a-0b2a447940f8","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cdiv\u003EO QUE VOCÊ VAI APRENDER\u003C\u002Fdiv\u003E","style":{"fontSize":22,"color":"#212529","fontFamily":"Montserrat","fontWeight":"500","textAlign":"left","paddingTop":"30px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"},"mobile":{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","fontSize":"16px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"0b843d88-454b-42ed-9761-22d4cf3a7a87","ref":null,"props":{"className":"lead","rck_id":"0b843d88-454b-42ed-9761-22d4cf3a7a87","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb\u003EEM CADA CURSO\u003C\u002Fb\u003E","style":{"fontSize":"48px","color":"#212529","fontFamily":"Montserrat","fontWeight":"500","textAlign":"left","paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"0px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"32px","marginTop":"-9px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null}]},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"915aedad-727a-4dec-aacc-2299fb3dbd0d","ref":null,"props":{"rck_id":"915aedad-727a-4dec-aacc-2299fb3dbd0d","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"background":"url() center center \u002F auto repeat scroll, linear-gradient(to bottom, rgba(0, 166, 79, 1), rgba(220, 130, 32, 1))","boxShadow":"1px 1px 10px 0px rgba(94, 0, 0, 0.42)","border":"0px solid rgba(218, 210, 210, 0)","borderRadius":"30px 30px 30px 30px","paddingTop":"30px","paddingRight":"30px","paddingBottom":"30px","paddingLeft":"30px","marginTop":"20px","marginRight":0,"marginBottom":0,"marginLeft":0},"children":[{"$$typeof":"react.element","type":"div","key":"e7832650-a8d5-40a9-a69e-89e09b6dc21f","ref":null,"props":{"rck_id":"e7832650-a8d5-40a9-a69e-89e09b6dc21f","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"907abe86-ebb2-4979-be43-b010c95e6c9d","ref":null,"props":{"className":"lead","rck_id":"907abe86-ebb2-4979-be43-b010c95e6c9d","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb\u003E\u003Cfont color=\"#ffffff\"\u003EHorsemanship e Comportamento Natural&nbsp;&nbsp;\u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003Cbr\u003E","style":{"fontSize":22,"color":"#212529","fontFamily":"Montserrat"},"mobile":{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","lineHeight":"28px","textAlign":"left"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"dc41f1f6-9980-4313-9082-80956d2001e7","ref":null,"props":{"className":"lead","rck_id":"dc41f1f6-9980-4313-9082-80956d2001e7","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E1. A Natureza dos Cavalos\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E2. Etologia\nA Vida na Manada\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E3. O que é Horsemanship\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E4. O Início\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E5. Colocar o Cabresto\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E6. Exercícios de Guia\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E7. Bandeira\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":"16px","color":"#212529","fontFamily":"Montserrat","fontWeight":"400","lineHeight":"22px","textAlign":"left"},"mobile":{"textAlign":"left","paddingTop":"16px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"}},"_owner":null}]},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"fd1e02fc-0385-4dae-8a05-4c955cc8099d","ref":null,"props":{"rck_id":"fd1e02fc-0385-4dae-8a05-4c955cc8099d","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"background":"url() center center \u002F auto repeat scroll, linear-gradient(to bottom, rgba(0, 166, 79, 1), rgba(220, 130, 32, 1))","boxShadow":"1px 1px 10px 0px rgba(94, 0, 0, 0.42)","border":"0px solid rgba(218, 210, 210, 0)","borderRadius":"30px 30px 30px 30px","paddingTop":"30px","paddingRight":"30px","paddingBottom":"30px","paddingLeft":"30px","marginTop":"20px","marginRight":0,"marginBottom":0,"marginLeft":0},"children":[{"$$typeof":"react.element","type":"div","key":"b901b1cd-5a4a-41a9-b7ef-82044739cccc","ref":null,"props":{"rck_id":"b901b1cd-5a4a-41a9-b7ef-82044739cccc","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"ba426686-48aa-4d60-82c4-706276e2ae27","ref":null,"props":{"className":"lead","rck_id":"ba426686-48aa-4d60-82c4-706276e2ae27","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb\u003E\u003Cfont color=\"#ffffff\"\u003EEquitação Inteligente\u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003Cbr\u003E","style":{"fontSize":22,"color":"#212529","fontFamily":"Montserrat"},"mobile":{"textAlign":"left","paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"c1e06294-c171-4539-816b-2e1f0f7db3f2","ref":null,"props":{"className":"lead","rck_id":"c1e06294-c171-4539-816b-2e1f0f7db3f2","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E1.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003EFlexionamento de pescoço ao cabresto\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E2.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003EFlexionamento de coluna ao cabresto\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E3.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003ETrabalho de garupa e pescoço ao cabresto\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E4.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003EComo vestir a cabeçada\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E5.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003EFlexionamento de pescoço com embocabura\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E6.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003ETrabalho de pescoço e garupa com a embocadura\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E7.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003EComo colocar a sela\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E\u003Cspan style=\"background-color: initial;\"\u003E8.&nbsp;\u003C\u002Fspan\u003E\u003Cspan style=\"background-color: initial;\"\u003EHora de montar\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E\u003Cspan style=\"background-color: initial;\"\u003E9.&nbsp;\u003C\u002Fspan\u003E\u003Cspan style=\"background-color: initial;\"\u003EFlexionamento de pescoço montado\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E\u003Cspan style=\"background-color: initial;\"\u003E10.&nbsp;\u003C\u002Fspan\u003E\u003Cspan style=\"background-color: initial;\"\u003ETrabalho de garupa e pesçoço montado\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E\u003Cspan style=\"background-color: initial;\"\u003E11.&nbsp;\u003C\u002Fspan\u003E\u003Cspan style=\"background-color: initial;\"\u003EComo montar da cerca\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E\u003Cspan style=\"background-color: initial;\"\u003E12.&nbsp;\u003C\u002Fspan\u003E\u003Cspan style=\"background-color: initial;\"\u003EComo parar com só uma rédea\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cspan style=\"background-color: initial;\"\u003E\u003Cfont color=\"#ffffff\"\u003E13. Controle de velocidade\u003C\u002Ffont\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cspan style=\"background-color: initial;\"\u003E\u003Cfont color=\"#ffffff\"\u003E14. Como ensinar o cavalo a ficar parado\u003C\u002Ffont\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cspan style=\"background-color: initial;\"\u003E\u003Cfont color=\"#ffffff\"\u003E15. Como ensinar o cavalo a abrir porteira\u003C\u002Ffont\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cspan style=\"background-color: initial;\"\u003E\u003Cfont color=\"#ffffff\"\u003E16. Passeio com controle\u003C\u002Ffont\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":"16px","color":"#212529","fontFamily":"Montserrat","fontWeight":"400","lineHeight":"22px","textAlign":"left"},"mobile":{"paddingTop":"16px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","textAlign":"left"}},"_owner":null}]},"_owner":null}],"mobile":{"marginTop":"20px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"7ea25249-c1e7-4fb4-8f17-4baa5d3a4343","ref":null,"props":{"rck_id":"7ea25249-c1e7-4fb4-8f17-4baa5d3a4343","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"background":"url() center center \u002F auto repeat scroll, linear-gradient(to bottom, rgba(0, 166, 79, 1), rgba(220, 130, 32, 1))","boxShadow":"1px 1px 10px 0px rgba(94, 0, 0, 0.42)","border":"0px solid rgba(218, 210, 210, 0)","borderRadius":"30px 30px 30px 30px","paddingTop":"30px","paddingRight":"30px","paddingBottom":"30px","paddingLeft":"30px","marginTop":"20px","marginRight":0,"marginBottom":0,"marginLeft":0},"children":[{"$$typeof":"react.element","type":"div","key":"27f365f2-33d0-45bf-9450-2f642e0d1934","ref":null,"props":{"rck_id":"27f365f2-33d0-45bf-9450-2f642e0d1934","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"917c73c6-c88a-4483-b7d1-89aa0bffde75","ref":null,"props":{"className":"lead","rck_id":"917c73c6-c88a-4483-b7d1-89aa0bffde75","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cb\u003E\u003Cfont color=\"#ffffff\"\u003E15 Exercícios de Horsemanship&nbsp;\u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003Cbr\u003E","style":{"fontSize":22,"color":"#212529","fontFamily":"Montserrat"},"mobile":{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","textAlign":"left","lineHeight":"26px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"e90f0f27-011e-450d-abec-5c596d862798","ref":null,"props":{"className":"lead","rck_id":"e90f0f27-011e-450d-abec-5c596d862798","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003EO curso tem como base 4 sessões:\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E\u003Cbr\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E1.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003EExercícios de educação e controle ao cabresto\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E2. Exercícios de educação e controle de pressão\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E3.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003EExercícios de educação e controle de movimentos\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#ffffff\"\u003E4.&nbsp;\u003Cspan style=\"background-color: initial;\"\u003EExercícios de educação de controle de pressão para as situações reais.\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":"16px","color":"#212529","fontFamily":"Montserrat","fontWeight":"400","lineHeight":"22px","textAlign":"left"},"mobile":{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"16px","marginRight":0,"marginBottom":0,"marginLeft":0,"textAlign":"left"}},"_owner":null}]},"_owner":null}],"mobile":{"marginTop":"20px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null}],"mobile":{"paddingTop":"40px","paddingRight":"20px","paddingBottom":"40px","paddingLeft":"20px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"a181fa5c-eb96-4da1-8ffa-43f957800bf1","ref":null,"props":{"rck_id":"a181fa5c-eb96-4da1-8ffa-43f957800bf1","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"7e5e1d7c-6696-42ce-9010-2c4e8a833143","ref":null,"props":{"rck_id":"7e5e1d7c-6696-42ce-9010-2c4e8a833143","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"d113f3f5-5565-4ac1-a853-502fba76198f","ref":null,"props":{"rck_id":"d113f3f5-5565-4ac1-a853-502fba76198f","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"f176253f-b2d8-4bb2-9405-d81fc4442f88","ref":null,"props":{"className":"lead","rck_id":"f176253f-b2d8-4bb2-9405-d81fc4442f88","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cdiv\u003E*ao comprar o combo você terá acesso por 1 ano a todo conteúdo\n\n\u003C\u002Fdiv\u003E","style":{"fontSize":"14px","color":"#212529","fontFamily":"Montserrat"},"mobile":{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"button","key":"c7014d7e-4ba0-4773-98dc-76a9c7dc141c","ref":null,"props":{"rck_id":"c7014d7e-4ba0-4773-98dc-76a9c7dc141c","className":"btn","style":{"background":"url() center center \u002F auto repeat scroll, linear-gradient(to right, rgba(210, 139, 33, 1), rgba(50, 105, 9, 1))","border":"0px solid rgba(218, 210, 210, 0)","fontFamily":"Montserrat","fontWeight":"700","fontSize":"18px","color":"rgba(255, 255, 255, 1)","borderRadius":"30px 30px 30px 30px","paddingTop":"15px","paddingRight":"50px","paddingBottom":"15px","paddingLeft":"50px","marginTop":"30px","marginRight":0,"marginBottom":0,"marginLeft":0},"rck_type":"element","rck_element":"button","text":"Garantir meu desconto","aria-label":"Button","type":"external","newWindow":false,"source":"https:\u002F\u002Fpay.hotmart.com\u002FV71808298A?checkoutMode=10&off=il5hdz4o&offDiscount=70PORCENTO&bid=1678127354787","redirectType":"noAction","callback":"","motion":{"effect":"Pulse","duration":"slow","delay":0,"iterationCount":"1","activation":"hover"}},"_owner":null}]},"_owner":null}]},"_owner":null}],"mobile":{"paddingTop":"0px","paddingRight":"20px","paddingBottom":"0px","paddingLeft":"20px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"3029a88f-a9e1-4864-a74c-bb157f3eceed","ref":null,"props":{"rck_id":"3029a88f-a9e1-4864-a74c-bb157f3eceed","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"e624d69c-4812-484d-8a70-a50027e05f7c","ref":null,"props":{"rck_id":"e624d69c-4812-484d-8a70-a50027e05f7c","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"background":"url() center center \u002F auto repeat scroll rgba(0, 0, 0, 1)"},"children":[{"$$typeof":"react.element","type":"div","key":"5f1666fc-b0cb-4427-9fa5-2bca554e6f3b","ref":null,"props":{"rck_id":"5f1666fc-b0cb-4427-9fa5-2bca554e6f3b","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"45a32fab-1768-41ba-85fc-e795d51d9b48","ref":null,"props":{"rck_id":"45a32fab-1768-41ba-85fc-e795d51d9b48","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cfont color=\"#ffffff\"\u003EE ainda mais 2 BÔNUS SUPER ESPECIAIS\n\u003C\u002Ffont\u003E","style":{"fontSize":26,"fontWeight":600,"color":"#212529","fontFamily":"Montserrat"}},"_owner":null}]},"_owner":null}],"mobile":{"paddingTop":"10px","paddingRight":"20px","paddingBottom":"10px","paddingLeft":"20px"}},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"66e96a3c-af98-40e8-a07c-e02b17c2a688","ref":null,"props":{"rck_id":"66e96a3c-af98-40e8-a07c-e02b17c2a688","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"8da0c338-2e31-4ace-8c80-c00ea5d2c9ef","ref":null,"props":{"rck_id":"8da0c338-2e31-4ace-8c80-c00ea5d2c9ef","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"background":"url() center center \u002F auto repeat scroll rgba(241, 241, 241, 1)"},"children":[{"$$typeof":"react.element","type":"div","key":"daf548ae-f378-44eb-98df-f639d407f84f","ref":null,"props":{"rck_id":"daf548ae-f378-44eb-98df-f639d407f84f","className":"col-md-6","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"img","key":"c3c5c44b-e53a-46d2-a7b4-d73b611c6e4d","ref":null,"props":{"className":"img-fluid","rck_id":"c3c5c44b-e53a-46d2-a7b4-d73b611c6e4d","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FRWlWURl9Pk6ZOyJw6Ih1yQ.png","style":{"width":"461px","height":"346px"},"naturalWidth":"1536px"},"_owner":null},{"$$typeof":"react.element","type":"div","key":"20438283-c6c9-4d31-934c-71345c67b468","ref":null,"props":{"rck_id":"20438283-c6c9-4d31-934c-71345c67b468","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003EE-book: Introdução à Nutrição dos Equinos\n\u003C\u002Fdiv\u003E","style":{"fontSize":"24px","fontWeight":"700","color":"#212529","fontFamily":"Montserrat","lineHeight":"32px"},"mobile":{"fontFamily":"Montserrat","fontSize":"22px","lineHeight":"26px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"06b2ea1a-b001-4f31-9127-4c5f7ba45349","ref":null,"props":{"rck_id":"06b2ea1a-b001-4f31-9127-4c5f7ba45349","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003E\u003Cspan style=\"font-weight: normal;\"\u003EGaranta uma vida mais saudável para o seu cavalo\n\n\n\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":"18px","fontWeight":600,"color":"#212529","marginTop":"9px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"16px","lineHeight":"22px"}},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"20ce01b3-6d9b-4244-adaf-9372e9e4ed92","ref":null,"props":{"rck_id":"20ce01b3-6d9b-4244-adaf-9372e9e4ed92","className":"col-md-6","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"img","key":"00bbcbc5-6455-405c-8af0-dd4bb68033e0","ref":null,"props":{"className":"img-fluid","rck_id":"00bbcbc5-6455-405c-8af0-dd4bb68033e0","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FgYsCWz0EkmrVgncSK3c3Q.png","style":{"width":"461px","height":"346px"},"naturalWidth":"1536px"},"_owner":null},{"$$typeof":"react.element","type":"div","key":"b5216357-485d-4de3-9841-a38c0dff9207","ref":null,"props":{"rck_id":"b5216357-485d-4de3-9841-a38c0dff9207","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003EE-book: Selas e Embocaduras\n\n\u003C\u002Fdiv\u003E","style":{"fontSize":26,"fontWeight":"700","color":"#212529","fontFamily":"Montserrat"},"mobile":{"fontSize":"24px","lineHeight":"26px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"07552bfb-8a97-4718-b346-8524c520d6a9","ref":null,"props":{"rck_id":"07552bfb-8a97-4718-b346-8524c520d6a9","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cspan style=\"font-weight: normal;\"\u003EConheça os diferentes tipos de sela, embocaduras e seus usos e ações&nbsp;&nbsp;\u003C\u002Fspan\u003E\u003Cbr\u003E","style":{"fontSize":"18px","fontWeight":600,"color":"#212529","marginTop":"9px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"16px","lineHeight":"20px"}},"_owner":null}]},"_owner":null}]},"_owner":null}],"mobile":{"paddingTop":"40px","paddingRight":"20px","paddingBottom":"40px","paddingLeft":"20px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"87ceeb7c-7917-4a2a-8bd3-d61a57b34aaa","ref":null,"props":{"rck_id":"87ceeb7c-7917-4a2a-8bd3-d61a57b34aaa","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","marginTop":"82px","marginRight":0,"marginBottom":0,"marginLeft":0},"children":[{"$$typeof":"react.element","type":"div","key":"b921e18b-b196-4027-ad66-1cde72f04275","ref":null,"props":{"rck_id":"b921e18b-b196-4027-ad66-1cde72f04275","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"f18b7885-393b-4c82-aef0-73cde0c4b734","ref":null,"props":{"rck_id":"f18b7885-393b-4c82-aef0-73cde0c4b734","className":"col-md-5","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"5px","paddingRight":"40px","paddingBottom":"5px","paddingLeft":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"cadf7e0b-f0f1-41da-b064-e041b73b46ff","ref":null,"props":{"className":"lead","rck_id":"cadf7e0b-f0f1-41da-b064-e041b73b46ff","rck_type":"element","rck_element":"paragraph","tag":"div","text":"\u003Cb\u003ESobre nós&nbsp;\u003C\u002Fb\u003E\u003Cbr\u003E","style":{"fontSize":"18px","color":"rgba(126, 126, 126, 1)","textAlign":"left","fontFamily":"Montserrat"},"mobile":{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"7ac0e0cb-a7e5-40ac-9d72-082291b97c43","ref":null,"props":{"className":"lead","rck_id":"7ac0e0cb-a7e5-40ac-9d72-082291b97c43","rck_type":"element","rck_element":"paragraph","tag":"div","text":"\u003Cdiv\u003E\u003Cb\u003E\u003Cfont color=\"#000000\"\u003EA UC é uma escola que oferece cursos e programas livres em diversas áreas da equinocultura.\u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E\u003Cfont color=\"#000000\"\u003E\u003Cbr\u003E\u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E\u003Cfont color=\"#000000\"\u003ESomos uma escola livre, que abrange o universo do cavalo como um todo, através de cursos rápidos, cursos de média e longa durações.\u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E\u003Cfont color=\"#000000\"\u003E\u003Cbr\u003E\u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E\u003Cfont color=\"#000000\"\u003EA UC, portanto, não é uma universidade formal.\u003C\u002Ffont\u003E\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":"20px","color":"rgba(126, 126, 126, 1)","textAlign":"left","lineHeight":"26px","fontFamily":"Montserrat","marginTop":"16px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"paddingTop":"16px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","textAlign":"center","fontSize":"18px","lineHeight":"24px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"569105dc-af72-4f1a-be15-c39d28aca133","ref":null,"props":{"className":"lead","rck_id":"569105dc-af72-4f1a-be15-c39d28aca133","rck_type":"element","rck_element":"paragraph","tag":"div","text":"\u003Cdiv\u003EA UC foi fundada em 1997, a partir da ideia de ser um local onde as pessoas pudessem buscar, levar, trocar, compartilhar conhecimento sobre cavalos em experiências agradáveis e únicas.\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003EOferecemos cursos e programas livres em diversas áreas da equinocultura. É uma escola livre, no sentido de que abrange o universo do cavalo como um todo, através de cursos rápidos, cursos de média e longa durações. A UC, portanto, não é uma universidade formal. O nome vem de Universo do Cavalo, no sentido de sermos absolutamente dedicados somente aos cavalos elaborando soluções de conhecimento para todo o mercado.\u003C\u002Fdiv\u003E","style":{"fontSize":"16px","color":"rgba(126, 126, 126, 1)","textAlign":"left","lineHeight":"24px","fontFamily":"Montserrat","fontWeight":"500","marginTop":"16px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"14px","lineHeight":"22px","paddingTop":"16px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"button","key":"d63cfc08-570f-48c2-b5ba-dad0a903e843","ref":null,"props":{"rck_id":"d63cfc08-570f-48c2-b5ba-dad0a903e843","className":"btn","style":{"background":"url() center center \u002F auto repeat scroll, linear-gradient(to right, rgba(210, 139, 33, 1), rgba(50, 105, 9, 1))","border":"0px solid rgba(218, 210, 210, 0)","fontFamily":"Montserrat","fontWeight":"700","fontSize":"18px","color":"rgba(255, 255, 255, 1)","borderRadius":"30px 30px 30px 30px","paddingTop":"15px","paddingRight":"50px","paddingBottom":"15px","paddingLeft":"50px","marginTop":"30px","marginRight":0,"marginBottom":0,"marginLeft":0},"rck_type":"element","rck_element":"button","text":"Quero garantir os 3 cursos por 10x sem juros de  R$ 29,70","aria-label":"Button","type":"external","newWindow":false,"source":"https:\u002F\u002Fpay.hotmart.com\u002FV71808298A?checkoutMode=10&off=il5hdz4o&offDiscount=70PORCENTO&bid=1678127354787","redirectType":"noAction","callback":"","motion":{"effect":"Pulse","duration":"slow","delay":0,"iterationCount":"1","activation":"hover"}},"_owner":null}],"mobile":{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"61f5b447-34aa-4de4-89ef-846d2f5a15c0","ref":null,"props":{"rck_id":"61f5b447-34aa-4de4-89ef-846d2f5a15c0","className":"col-md-7","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"img","key":"78e9ecd8-94d9-4029-86b7-67d57b00e122","ref":null,"props":{"className":"img-fluid","rck_id":"78e9ecd8-94d9-4029-86b7-67d57b00e122","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FyTtdk3lZmUiwmdAKZYnYQ\u002Fimages\u002FJb8yKMvXy0ed9qz1MkpOA.png","style":{"width":"637px","height":"637px","borderRadius":"150px 20px 150px 20px"},"naturalWidth":"1080px","mobile":{"width":"346px","height":"346px","marginTop":"24px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null}]},"_owner":null}],"mobile":{"paddingTop":"40px","paddingRight":"20px","paddingBottom":"40px","paddingLeft":"20px"}},"_owner":null}],"mobile":{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"31415d24-6baa-42d9-923c-318b1d79141e","ref":null,"props":{"rck_id":"31415d24-6baa-42d9-923c-318b1d79141e","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","background":"url() center center \u002F auto repeat scroll rgba(29, 29, 29, 1)"},"children":[{"$$typeof":"react.element","type":"div","key":"d138044b-5148-486c-931e-12db7515b469","ref":null,"props":{"rck_id":"d138044b-5148-486c-931e-12db7515b469","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"20px","paddingRight":"20px","paddingBottom":"20px","paddingLeft":"20px"},"children":[{"$$typeof":"react.element","type":"div","key":"bd29fe34-dc33-4760-ac5b-9646ad03d64c","ref":null,"props":{"rck_id":"bd29fe34-dc33-4760-ac5b-9646ad03d64c","className":"col-md-6","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"21ca63dd-f6b8-4e4d-b654-eca849e3dd04","ref":null,"props":{"className":"lead","rck_id":"21ca63dd-f6b8-4e4d-b654-eca849e3dd04","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cfont color=\"#ffffff\"\u003E© 2022 – UC. Todos os direitos reservados.&nbsp;&nbsp;\u003C\u002Ffont\u003E\u003Cbr\u003E","style":{"fontSize":"14px","color":"#212529","textAlign":"left"}},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"4a423dee-69c6-4b11-b2c4-cb5d6e6d9738","ref":null,"props":{"rck_id":"4a423dee-69c6-4b11-b2c4-cb5d6e6d9738","className":"col-md-6","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"a6e9ba02-cd09-4178-8992-dce914a3a800","ref":null,"props":{"className":"lead","rck_id":"a6e9ba02-cd09-4178-8992-dce914a3a800","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Ca href=\"https:\u002F\u002Fdoctorsites.com.br\u002Fpolitica-de-privacidade\"\u003E\u003Cfont color=\"#ffffff\"\u003EPolíticas de Privacidade\u003C\u002Ffont\u003E\u003C\u002Fa\u003E\u003Cbr\u003E","style":{"fontSize":"14px","color":"#212529","textAlign":"right"}},"_owner":null}]},"_owner":null}]},"_owner":null}]},"_owner":null}],"pageSettings":{"language":"pt-BR","badgeAllowed":false,"position":"bottomLeft","launchContent":0,"colorSwatch":["#a0aa36","#f1f1f1","#cfcfcf","#7e7e7e","#5e0000","#dc8220","#00a64f","#8f3838","#272020","#212529","#326909","#d28b21","#dad2d2","#ee7e7e","#000000","#ffffff"],"userClasses":["esconde","display-date","displayDate"],"fonts":[{"style":"Roboto"},{"style":"Roboto Condensed"},{"style":"Montserrat"}]}},"notification":[],"tenant":{"pageId":"pZRCftY7E6aitLEI7kjw","tenantId":"yTtdk3lZmUiwmdAKZYnYQ","funnelId":"6a9460d4-29d0-424d-8dd8-4a0389201c80","stepId":"rwkOuXbmEq7rsWwDUm5Dg","type":"Tripwire Funnel","isSSR":true},"settings":{"url":"lp.uccavalo.com.br\u002Fc-pv","version":"0","originStepUrl":null,"originStepId":null,"isConversion":false},"router":{"location":{"pathname":"\u002F","search":"","hash":"","key":"46tipd"},"action":"POP"}}</script><script type="text/javascript" async>
+                var blob = new Blob([
+                    document.querySelector('#result').textContent
+                ], { type: "text/javascript" });
+
+                var worker = new Worker(window.URL.createObjectURL(blob));
+
+                worker.onmessage = function (e) {
+                    if (e.data.type === 'getFont') {
+                        getFont(e.data.link);
+                    }
+                    if (e.data.type === 'getMain') {
+                        getMain([
+                            '/dist/vendor_e06534953fb807bdf519.js',
+                            '/dist/main-client_f3db2c044c967a6fba21.js',
+                            'https://www.youtube.com/iframe_api'
+                        ]);
+                    }
+                };
+
+                worker.postMessage({ url: document.location.protocol + '//' + document.location.host });
+            </script><script type="text/javascript" async>
+                var devicePixelRatio = window.devicePixelRatio;
+                var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                var deviceType;
+                if(deviceWidth >= 992) deviceType = 'style';
+                if(deviceWidth < 992 && deviceWidth >= 820) deviceType = 'tablet';
+                if(deviceWidth < 820) deviceType = 'mobile';
+
+                var imgs = document.getElementsByTagName("img");
+                
+                for (var i = 0; i < imgs.length; i++) {
+                    var img = imgs[i];
+                    var src = img.dataset.src;
+                    var widthMap = JSON.parse(img.dataset.widthmap);
+
+                    if(img.dataset.isgif) {
+                        img.src = src;
+                        continue;
+                    } else {
+                        src = src + '?auto=compress&width=';
+                    }
+
+                    if(widthMap[deviceType]) {
+                        var finalWidth;
+                        var logicalSize = widthMap[deviceType] * devicePixelRatio;
+                        if (widthMap.natural && logicalSize > widthMap.natural) {
+                            finalWidth = widthMap.natural;
+                        } else {
+                            finalWidth = logicalSize;
+                        }
+                        img.src = src + finalWidth;
+                        continue;
+                    }
+
+                    if(widthMap.style) {
+                        var finalWidth;
+                        var logicalSize = widthMap.style * devicePixelRatio;
+                        if (widthMap.natural && logicalSize > widthMap.natural) {
+                            finalWidth = widthMap.natural;
+                        } else {
+                            finalWidth = logicalSize;
+                        }
+                        img.src = src + finalWidth;
+                        continue;
+                    }
+                    img.src = src;
+                }
+            </script><script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function() {
+			console.log("O script foi executado!");
+
+			var today = new Date();
+			var day = today.getDate();
+			var day2 = today.getDate()-1;
+			var day3 = today.getDate()-2;
+			var month = today.getMonth();
+			var monthList = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+
+			if (month == 0 && day == 1) {
+				day2 = "31";
+				day3 = "30";
+			} else if (month == 0 && day == 2) {
+				day3 = "31";
+			}
+
+			// Restante do código aqui...
+
+			var displayDateElements = document.getElementsByClassName("displayDate");
+			if (displayDateElements.length > 0) {
+				displayDateElements[0].innerHTML = '<center>Somente nos dias: ' + '<b>' + day3 + ', ' + day2 + ' e ' + day + ' de ' + monthList[month] + '</b> você terá um desconto diferenciado de 95%';
+			}
+		});
+	</script><a href="https://wa.me/5521999526598" target="_blank" style="right: 25px; position: fixed; width: 60px; height: 60px; bottom: 40px; z-index: 100;" class="bt-whatsApp">
+<img decoding="async" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMjYxOSA1MDYgMTIwIDEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzI3ZDA0NTsKICAgICAgfQoKICAgICAgLmNscy0yLCAuY2xzLTUgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgc3Ryb2tlOiAjZmZmOwogICAgICAgIHN0cm9rZS13aWR0aDogNXB4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgc3Ryb2tlOiBub25lOwogICAgICB9CiAgICA8L3N0eWxlPjwvZGVmcz48ZyBkYXRhLW5hbWU9Ikdyb3VwIDM2IiBpZD0iR3JvdXBfMzYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIzMDAgNzMpIj48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjYwIiBjeT0iNjAiIGRhdGEtbmFtZT0iRWxsaXBzZSAxOCIgaWQ9IkVsbGlwc2VfMTgiIHI9IjYwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMTkgNDMzKSIvPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzUiIGlkPSJHcm91cF8zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU0IDM4NikiPjxnIGRhdGEtbmFtZT0iR3JvdXAgMzQiIGlkPSJHcm91cF8zNCI+PGcgY2xhc3M9ImNscy0yIiBkYXRhLW5hbWU9IkVsbGlwc2UgMTkiIGlkPSJFbGxpcHNlXzE5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NCA3NSkiPjxjaXJjbGUgY2xhc3M9ImNscy00IiBjeD0iMzEuNSIgY3k9IjMxLjUiIHI9IjMxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtNSIgY3g9IjMxLjUiIGN5PSIzMS41IiByPSIyOSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDI0LDE5MWwtNC42LDE2LjMsMTYuOS00LjcuOS01LjItMTEsMy41LDIuOS0xMC41WiIgZGF0YS1uYW1lPSJQYXRoIDEyNiIgaWQ9IlBhdGhfMTI2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTMyNSAtNjgpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTI2Niw5MGMwLS4xLDMuNS0xMS43LDMuNS0xMS43bDguNCw3LjlaIiBkYXRhLW5hbWU9IlBhdGggMTI3IiBpZD0iUGF0aF8xMjciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTY1IDQzKSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDM5LjMsMTYwLjZhOS40LDkuNCwwLDAsMC0zLjksNi4xYy0uNSwzLjksMS45LDcuOSwxLjksNy45YTUwLjg3Niw1MC44NzYsMCwwLDAsOC42LDkuOCwzMC4xODEsMzAuMTgxLDAsMCwwLDkuNiw1LjEsMTEuMzc4LDExLjM3OCwwLDAsMCw2LjQuNiw5LjE2Nyw5LjE2NywwLDAsMCw0LjgtMy4yLDkuODUxLDkuODUxLDAsMCwwLC42LTIuMiw1Ljg2OCw1Ljg2OCwwLDAsMCwwLTJjLS4xLS43LTcuMy00LTgtMy44cy0xLjMsMS41LTIuMSwyLjYtMS4xLDEuNi0xLjksMS42LTQuMy0xLjQtNy42LTQuNGExNS44NzUsMTUuODc1LDAsMCwxLTQuMy02cy42LS43LDEuNC0xLjhhNS42NjQsNS42NjQsMCwwLDAsMS4zLTIuNGMwLS41LTIuOC03LjYtMy41LTcuOUExMS44NTIsMTEuODUyLDAsMCwwLDE0MzkuMywxNjAuNloiIGRhdGEtbmFtZT0iUGF0aCAxMjgiIGlkPSJQYXRoXzEyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMjYuMzMyIC02OC40NjcpIi8+PC9nPjwvZz48L3N2Zz4=" alt width="60px" />
+</a>
+<span id="alertWapp" style="right: 30px; visibility: hidden; position: fixed; width: 17px; height: 17px; bottom: 90px; background: red; z-index: 101; font-size: 11px; color: #fff; text-align: center; border-radius: 50px; font-weight: bold; line-height: normal;">
+1 </span>
+<div id="msg1" style="right: 90px; visibility: visible; background: #000; color: #fff; position: fixed; width: 200px; bottom: 52px; text-align: center; font-size: 13px; line-height: 31px; height: 32px; border-radius: 100px; z-index: 100;">
+Dúvidas? Entre em contato!</div>
+<script type="text/javascript">
+    function showIt2() {
+        document.getElementById("msg1").style.visibility = "visible";
+    }
+    setTimeout("showIt2()", 5000);
+
+    function hiddenIt() {
+        document.getElementById("msg1").style.visibility = "hidden";
+    }
+    setTimeout("hiddenIt()", 15000);
+
+    function showIt3() {
+        document.getElementById("msg1").style.visibility = "visible";
+    }
+    setTimeout("showIt3()", 25000);
+    msg1.onclick = function () {
+        document.getElementById('msg1').style.visibility = "hidden";
+    };
+
+    function alertW() {
+        document.getElementById("alertWapp").style.visibility = "visible";
+    }
+    setTimeout("alertW()", 15000);
+</script> <script>
+		window.onload = function() {
+			var elementos = document.getElementsByClassName("esconde");
+			for (var i = 0; i < elementos.length; i++) {
+				elementos[i].style.display = "none";
+				setTimeout(function(elemento){
+					elemento.style.display = "block";
+				}, 10000, elementos[i]);
+			}
+		};
+	</script></body></html>
